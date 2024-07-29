@@ -8,6 +8,21 @@ $textColor: #151515;
 $linkColor: black;
 $linkHoverBgColor: #eaeaea; // Можно изменить на нужный цвет для hover
 
+@mixin flexCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin heading1 {
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 110%;
+    color: $headerBgColor;
+}
+
 
 @mixin defaultButton {
     border: none;
@@ -31,7 +46,9 @@ $linkHoverBgColor: #eaeaea; // Можно изменить на нужный ц�
 }
 
 // Импорт шрифтов
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 // Основной стиль для body
 body {
@@ -41,8 +58,7 @@ body {
     color: $textColor;
     font-size: 16px;
     font-family: "Manrope", sans-serif;
-    display: flex;
-    flex-direction: column;
+   @include flexCenter();
     align-items: center;
 }
 
@@ -52,14 +68,18 @@ header {
     height: 102px;
     width: 160vh;
     background: $headerBgColor;
-    display: flex;
+    @include flexCenter();
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     gap: 5%;
     position: sticky;
     top: 0;
     z-index: 1;
     padding: 0 20px; // Исправлено: значения разделены пробелом
+}
+
+h1 {
+    @include heading1();
 }
 
 // Логотип
@@ -142,9 +162,7 @@ header {
 
 // Основной контейнер для контента
 main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flexCenter();
 }
 
 // Изображение на фоне
@@ -160,6 +178,7 @@ main {
     background-repeat: no-repeat;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), rgba(0, 0, 0, 0.4), url("path_to_image");
-
+    
+    @include flexCenter();
 
 }
