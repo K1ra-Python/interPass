@@ -2,13 +2,14 @@
 $bgColor: #f0f0f0;
 $headerBgColor: #fff;
 $buttonDefaultColor: #f37021;
+$buttonHoverColor: #f6f3ec;
 $secondMain-color: #DA7816;
 $textColor: #151515;
 $linkColor: black;
 $linkHoverBgColor: #eaeaea; // Можно изменить на нужный цвет для hover
 
 
-@mixin defaultButton{
+@mixin defaultButton {
     border: none;
     border-radius: 72px;
     padding: 24px 32px;
@@ -16,6 +17,17 @@ $linkHoverBgColor: #eaeaea; // Можно изменить на нужный ц�
     height: 72px;
     background: $buttonDefaultColor;
     color: #fff;
+}
+
+
+@mixin hoverButton {
+    border: none;
+    border-radius: 72px;
+    padding: 24px 32px;
+    width: 212px;
+    height: 72px;
+    background: $buttonHoverColor;
+    color: $textColor;
 }
 
 // Импорт шрифтов
@@ -38,7 +50,7 @@ body {
 header {
     border-radius: 0 0 48px 48px;
     height: 102px;
-    width: 190vh;
+    width: 160vh;
     background: $headerBgColor;
     display: flex;
     justify-content: space-around;
@@ -52,11 +64,13 @@ header {
 
 // Логотип
 .logo {
-    > img {
+    >img {
         width: 240px;
         height: 60px;
     }
 }
+
+
 
 // Кнопка навигации
 .navigateBlockBtn {
@@ -65,6 +79,11 @@ header {
     border: none;
     font-size: 18px;
     background-color: white;
+
+}
+
+#telephone {
+    color: $secondMain-color;
 }
 
 // Контейнер для выпадающего содержимого
@@ -73,13 +92,18 @@ header {
     position: relative;
     display: inline-block;
 
+
     // Выпадающее содержимое (скрыто по умолчанию)
     .navigateBlock-content {
+        margin-top: 2vh;
         display: none;
         position: absolute;
-        min-width: 160px;
+        min-width: 333px;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         z-index: 1;
+        background: #f6f3ec;
+        border: 1px solid #d9d9d9;
+        border-radius: 0 0 24px 24px;
 
         // Ссылки внутри выпадающего списка
         a {
@@ -108,7 +132,11 @@ header {
 // Кнопка для получения бесплатной оценки
 .getAFreeEstimate {
     button {
-        @include defaultButton()
+        @include defaultButton();
+
+        &:hover {
+            @include hoverButton();
+        }
     }
 }
 
@@ -126,7 +154,7 @@ main {
     width: 160vh;
     height: 689px;
 
-    > img {
+    >img {
         // Можно добавить стили для изображения
     }
 }
