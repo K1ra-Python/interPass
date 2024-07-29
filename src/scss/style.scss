@@ -1,11 +1,11 @@
 // Переменные
-$bg-color: #f0f0f0;
-$header-bg-color: #fff;
-$button-bg-color: #f37021;
+$bgColor: #f0f0f0;
+$headerBgColor: #fff;
+$buttonDefaultColor: #f37021;
 $secondMain-color: #DA7816;
-$text-color: #151515;
-$link-color: black;
-$link-hover-bg-color: #eaeaea; // Можно изменить на нужный цвет для hover
+$textColor: #151515;
+$linkColor: black;
+$linkHoverBgColor: #eaeaea; // Можно изменить на нужный цвет для hover
 
 
 @mixin defaultButton{
@@ -14,7 +14,7 @@ $link-hover-bg-color: #eaeaea; // Можно изменить на нужный 
     padding: 24px 32px;
     width: 212px;
     height: 72px;
-    background: $secondMain-color;
+    background: $buttonDefaultColor;
     color: #fff;
 }
 
@@ -23,10 +23,10 @@ $link-hover-bg-color: #eaeaea; // Можно изменить на нужный 
 
 // Основной стиль для body
 body {
-    background: $bg-color;
+    background: $bgColor;
     margin: 0;
     padding: 0;
-    color: $text-color;
+    color: $textColor;
     font-size: 16px;
     font-family: "Manrope", sans-serif;
     display: flex;
@@ -39,7 +39,7 @@ header {
     border-radius: 0 0 48px 48px;
     height: 102px;
     width: 190vh;
-    background: $header-bg-color;
+    background: $headerBgColor;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -83,13 +83,13 @@ header {
 
         // Ссылки внутри выпадающего списка
         a {
-            color: $link-color;
+            color: $linkColor;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
 
             &:hover {
-                background: $link-hover-bg-color; // Можно изменить на нужный цвет для hover
+                background: $linkHoverBgColor; // Можно изменить на нужный цвет для hover
             }
         }
     }
@@ -127,4 +127,6 @@ main {
     height: 689px;
 
     > img {
-        // Можно добавить стили дл�
+        // Можно добавить стили для изображения
+    }
+}
