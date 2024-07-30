@@ -56,3 +56,89 @@ main {
     }
     
 }
+
+.threeGoodStuff{
+    margin-top: 5vh;
+    width: 160vh;
+    position: absolute;
+    top: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
+    .goodStuff{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .textRight{
+            @include bodyTextM;
+            width: 250px;
+        }
+    }
+}
+
+.mainOurServices{   
+    border-radius: 72px;
+    background-color: #F6F3EC;
+    position: absolute;
+    top: 100%;
+    @include flexCenter();
+}
+h2{
+ 
+    @include heading2();
+    color: $textColor;
+}
+
+h3{
+    @include heading3();
+    color: $textColor;
+    margin: 0;      
+}
+
+.headingXS{
+    @include bodyTextXS();
+    color: #5E5E5E;
+}
+
+.subHeading{
+    @include subHeading();
+    color: #5E5E5E;
+}
+.tripleBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 0 0 72px 72px;
+    padding: 0 20px; // Исправлено: значения разделены пробелом
+    width: 160vh;
+}
+.textS{
+    @include bodyTextS();
+    color: #5E5E5E;
+    width: 67%;
+}
+
+.cabinet{
+   
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 30px 70px;
+    gap: 72px;
+    display: flex;
+    justify-content: center;
+}
+
+.textAboutFurniture{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    button{
+        @include learnMoreButton();
+        background-color:#5e5e5e00;
+    }
+}
+
+#CabinetDoorReplacement{
+    flex-direction: row-reverse;
+}

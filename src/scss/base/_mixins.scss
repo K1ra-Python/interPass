@@ -12,6 +12,7 @@
     line-height: 110%;
     color: $headerBgColor;
 }
+
 @mixin heading2 {
     font-family: "Red Hat Display";
     font-weight: 400;
@@ -19,6 +20,7 @@
     line-height: 120%;
     color: $headerBgColor;
 }
+
 @mixin heading3 {
     font-family: "Red Hat Display";
     font-weight: 400;
@@ -26,6 +28,7 @@
     line-height: 120%;
     color: $headerBgColor;
 }
+
 @mixin heading4 {
     font-family: "Red Hat Display";
     font-weight: 400;
@@ -33,6 +36,7 @@
     line-height: 120%;
     color: $headerBgColor;
 }
+
 @mixin heading5 {
     font-family: "Red Hat Display";
     font-weight: 400;
@@ -41,40 +45,43 @@
     color: $headerBgColor;
 }
 
-@mixin bodyTextL{
- font-family: "Manrope";
- font-weight: 500;
- font-size: 20px;
- line-height: 150%;
+@mixin bodyTextL {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
 }
-@mixin bodyTextM{
+
+@mixin bodyTextM {
     @include bodyTextL();
     font-size: 18px;
 }
 
-@mixin bodyTextS{
+@mixin bodyTextS {
     @include bodyTextL();
     font-size: 16px;
 }
 
-@mixin bodyTextXS{
+@mixin bodyTextXS {
     @include bodyTextL();
     font-size: 14px;
 }
 
-@mixin  buttonText{
+@mixin buttonText {
     font-family: "Manrope";
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
 }
-@mixin  subHeading{
+
+@mixin subHeading {
     font-family: "Manrope";
     font-weight: 400;
     font-size: 22px;
     line-height: 120%;
 }
-@mixin inputHeading{
+
+@mixin inputHeading {
     font-family: "Manrope";
     font-weight: 700;
     font-size: 10px;
@@ -91,6 +98,17 @@
     background: $buttonDefaultColor;
     color: #fff;
 }
+
+@mixin learnMoreButton {
+    color: #45280a;
+    border: 1px solid #45280a;
+    border-radius: 72px;
+    padding: 24px 32px;
+    width: 150px;
+    height: 72px;
+    background-color: none;
+}
+
 
 @mixin hoverButton {
     border: none;
