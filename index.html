@@ -189,9 +189,41 @@
         </div>
       </div>
       <div class="gallery">
-        
+        <div class="titileTextButton">
+          <h2>Gallery</h2>
+          <div class="galleryMore">
+            <div class="bodyTextM">
+              Browse our gallery to see before and after photos of our previous
+              cabinet refacing projects. Our transformative work speaks for
+              itself.
+            </div>
+            <div class="browserTheGallery">
+              <button>Browse The Gallery</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <button id="before">Before</button>
+              <img src="src/images/slide1_1.png" alt="slide1_image1">
+              <img src="src/images/slide1_2.png" alt="slide1_image2">
+            </div>
+            <div class="slide">
+              <button id="after">After</button>
+              <img src="src/images/slide2_1.png" alt="slide2_image1">
+              <img src="src/images/slide2_2.png" alt="slide2_image2">
+            </div>
+            <!-- Добавьте больше слайдов по необходимости -->
+          </div>
+          <div class="controls">
+            <div class="prev" onclick="prevSlide()">❮</div>
+            <div class="next" onclick="nextSlide()">❯</div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>sus</footer>
+    <script src="dist/js/main.js"></script>
   </body>
 </html>
