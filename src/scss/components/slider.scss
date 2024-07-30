@@ -6,13 +6,13 @@
 .gallery {
     position: absolute;
     top: 280%;
-    width: 160vh;
+    width: 140vh;
     /* Изменено на 100%, чтобы адаптироваться к родительскому контейнеру */
-    height: 1030px;
+  
     /* Изменено на 100%, чтобы занять всю высоту контейнера */
     background-image: url('/src/images/galleryBackground.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     /* Обеспечивает полное покрытие фона */
     display: flex;
     flex-direction: column;
@@ -20,8 +20,7 @@
     align-items: center;
     overflow: hidden;
     /* Скрыть всё, что выходит за пределы фона */
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
 }
 
 .slider {
@@ -39,6 +38,7 @@
 
 .slide {
     min-width: 100%;
+    
     box-sizing: border-box;
     display: flex;
     gap: 24px;
@@ -50,8 +50,12 @@
         position: absolute;
         width: 115px;
         height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #before{
+        
         left: 3%;
         top: 5%;
     }
@@ -72,6 +76,7 @@
     display: flex;
     gap: 15px;
     justify-content: end;
+  
 }
 
 .prev,
@@ -101,7 +106,7 @@
 }
 
 .titileTextButton {
-    padding-top: 10%;
+    padding-top: 2%;
     width: 100%;
     display: flex;
     justify-content: space-between;
