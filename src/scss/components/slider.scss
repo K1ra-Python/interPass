@@ -3,84 +3,144 @@
 @import '../base/fonts';
 
 
-.container {
+.gallery {
+    position: absolute;
+    top: 280%;
+    width: 160vh;
+    /* Изменено на 100%, чтобы адаптироваться к родительскому контейнеру */
+    height: 1030px;
+    /* Изменено на 100%, чтобы занять всю высоту контейнера */
+    background-image: url('/src/images/galleryBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Обеспечивает полное покрытие фона */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Скрыть всё, что выходит за пределы фона */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.slider {
+    width: 100%;
+    //max-width: 600px; /* Максимальная ширина слайдера */
+    overflow: hidden;
     position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
+    /* Для правильного позиционирования кнопок */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 24px;
+
+    button {
+        @include defaultButton();
+        background: #f6f3ec;
+        color: $textColor;
+        position: absolute;
+        width: 115px;
+        height: 56px;
+    }
+    #before{
+        left: 3%;
+        top: 5%;
+    }
+    #after{
+        left: 53%;
+        top: 5%;
+    }
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    /* Убедитесь, что изображение не имеет лишних отступов */
+}
+
+.controls {
+    margin-top: 80px;
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+}
+
+.prev,
+.next {
     cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0);
     color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
+    font-size: 16px;
     text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  } 
+    line-height: 72px;
+    user-select: none;
+    transform: translateY(-50%);
+    border: 1px solid #F6F3EC;
+    border-radius: 100%;
+}
+
+.prev {
+    left: 10px;
+    /* Расстояние от левого края */
+}
+
+.next {
+    right: 10px;
+    /* Расстояние от правого края */
+}
+
+.titileTextButton {
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+    h2 {
+        margin-top: -10px;
+        align-self: flex-start;
+        color: #f6f3ec;
+    }
+}
+
+.galleryMore {
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.bodyTextM {
+    @include bodyTextM();
+    color: #f6f3ec;
+
+}
+
+.browserTheGallery {
+    button {
+        background-color: #ffffff00;
+        color: #ffffff;
+        border-radius: 72px;
+        padding: 24px 32px;
+        width: 237px;
+        height: 72px;
+
+        &:hover {
+            @include hoverButton();
+            width: 237px;
+            height: 72px;
+        }
+    }
+}

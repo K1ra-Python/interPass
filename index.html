@@ -189,49 +189,41 @@
         </div>
       </div>
       <div class="gallery">
-        
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="img_woods_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="img_5terre_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="img_mountains_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="img_lights_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="img_snow_wide.jpg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-
-</div>
+        <div class="titileTextButton">
+          <h2>Gallery</h2>
+          <div class="galleryMore">
+            <div class="bodyTextM">
+              Browse our gallery to see before and after photos of our previous
+              cabinet refacing projects. Our transformative work speaks for
+              itself.
+            </div>
+            <div class="browserTheGallery">
+              <button>Browse The Gallery</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <button id="before">Before</button>
+              <img src="src/images/slide1_1.png" alt="slide1_image1">
+              <img src="src/images/slide1_2.png" alt="slide1_image2">
+            </div>
+            <div class="slide">
+              <button id="after">After</button>
+              <img src="src/images/slide2_1.png" alt="slide2_image1">
+              <img src="src/images/slide2_2.png" alt="slide2_image2">
+            </div>
+            <!-- Добавьте больше слайдов по необходимости -->
+          </div>
+          <div class="controls">
+            <div class="prev" onclick="prevSlide()">❮</div>
+            <div class="next" onclick="nextSlide()">❯</div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>sus</footer>
+    <script src="dist/js/main.js"></script>
   </body>
 </html>
