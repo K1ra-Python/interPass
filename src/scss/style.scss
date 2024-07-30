@@ -6,26 +6,7 @@
 
 // Импорт компонентов
 @import 'components/header';
+@import 'components/mainContent.scss';
 
 
 // Основной контейнер для контента
-main {
- 
-}
-
-// Изображение на фоне
-.faceImage {
-    border-radius: 0 0 72px 72px;
-    padding: 0 20px; // Исправлено: значения разделены пробелом
-    top: 0;
-    width: 160vh;
-    position: absolute;
-    background-size: cover;
-    height: 689px;
-    background-image: url("/src/images/fce.png");
-    background-repeat: no-repeat;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), rgba(0, 0, 0, 0.4), url("path_to_image");
-   
-
-}

@@ -1,4 +1,6 @@
-
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/fonts';
 
 
 // Основной стиль для body
@@ -54,7 +56,7 @@ h1 {
 }
 
 #telephone {
-    color: $secondMain-color;
+    color: $brandOrange;
 }
 
 // Контейнер для выпадающего содержимого
