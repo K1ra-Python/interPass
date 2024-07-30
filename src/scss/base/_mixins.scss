@@ -1,0 +1,34 @@
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin heading1 {
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 110%;
+    color: $headerBgColor;
+}
+
+@mixin defaultButton {
+    border: none;
+    border-radius: 72px;
+    padding: 24px 32px;
+    width: 212px;
+    height: 72px;
+    background: $buttonDefaultColor;
+    color: #fff;
+}
+
+@mixin hoverButton {
+    border: none;
+    border-radius: 72px;
+    padding: 24px 32px;
+    width: 212px;
+    height: 72px;
+    background: $buttonHoverColor;
+    color: $textColor;
+}
