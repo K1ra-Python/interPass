@@ -61,7 +61,7 @@ function myFunction(x) {
     // Скрыть меню
     const nav = document.getElementById("myNav");
     borderRadius.style.borderRadius = "18px"; // Используем глобальную переменную
-    nav.style.display = "none";
+    nav.style.display = "block";
   }
   
   // Create a MediaQueryList object
