@@ -5,15 +5,15 @@
 // Изображение на фоне
 
 main {
+    width: 160vh;
     @include flexCenter();
 }
 
 .faceImage {
+    margin-top: -50px;
     border-radius: 0 0 72px 72px;
     padding: 0 20px; // Исправлено: значения разделены пробелом
-    top: 0;
-    width: 160vh;
-    position: absolute;
+    width: 100%;
     background-size: cover;
     height: 689px;
     background-image: url("/src/images/fce.png");
@@ -62,7 +62,6 @@ main {
 .threeGoodStuff {
     margin-top: 5vh;
     width: 160vh;
-    position: absolute;
     top: 700px;
     display: flex;
     justify-content: space-evenly;
@@ -84,8 +83,7 @@ main {
 .mainOurServices {
     border-radius: 72px;
     background-color: #F6F3EC;
-    position: absolute;
-    top: 100%;
+
     @include flexCenter();
 }
 
@@ -152,7 +150,7 @@ h3 {
 }
 
 .Testimonials {
-    position: absolute;
+ 
     top: 410%;
     width: 160vh;
 }
@@ -197,9 +195,9 @@ h3 {
 }
 
 .inputForma {
-    width: 140vh;
-    position: absolute;
-    top: 490%;
+    width: initial;
+  
+    
     background-image: url('/src/images/inputBackground.png');
     background-repeat: no-repeat;
     background-size: contain;
