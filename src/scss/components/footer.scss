@@ -3,8 +3,84 @@
 @import '../base/fonts';
 
 footer{
-    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
     height: 514px;
-    width: 160vh;
+    margin-top: -5%;
+    z-index: 0;
+    position: relative;
+
+    width: 100%;
     background-color: #342F28;
+    padding-bottom: 60px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 5%;
+    margin-top: 10%;
+    @include buttonText();
+    color: #FFFBF4;
+ 
+    a{
+        color: $buttonDefaultColor;
+    }
+    span{
+        @include bodyTextM();
+    }
+  
+}
+
+.infoBlock{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.followUs{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 5%;
+    margin-top: 10%;
+    @include buttonText();
+    color: #FFFBF4;
+}
+
+.followBlock{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogFaq{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 5%;
+    margin-top: 10%;
+    @include buttonText();
+    color: #FFFBF4;
+}
+
+.privacePolicy{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 5%;
+    margin-top: 10%;
+    @include buttonText();
+    color: #FFFBF4;
+}
+
+.createBy{
+    margin-left: -100px;
+    margin-top: 200px;
+    a{
+        color: $buttonDefaultColor;
+    }
 }
