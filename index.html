@@ -1,85 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project</title>
-    <link rel="stylesheet" href="dist/css/main.min.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-          <img src="/src/images/logo.svg" alt="logo" />
+    <link rel="stylesheet" href="dist/css/main.min.css" />
+  </head>
+  <body>
+    <header id="myHeader">
+      <div class="logo">
+        <img src="src/images/logo.svg" alt="logo" />
+      </div>
+      <nav id="myNav">
+        <div class="dropdown" id="services">
+          <button
+            aria-haspopup="true"
+            aria-expanded="false"
+            onclick="myFunction()"
+            class="dropbtn"
+          >
+            Services
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Cabinet Refacing</a>
+            <a href="#">Cabinet Doors Replacement</a>
+            <a href="#">Thermofoil Cabinet Door Repair</a>
+            <a href="#">Decorative Wall Panels</a>
+          </div>
         </div>
-        <nav>
-          <div class="navigateBlock" id="services">
-            <button class="navigateBlockBtn">Services</button>
-            <div class="navigateBlock-content">
-              <a href="#">Cabinet Refacing</a>
-              <a href="#">Cabinet Doors Replacement</a>
-              <a href="#">Thermofoil Cabinet Door Repair</a>
-              <a href="#">Decorative Wall Panels</a>
-            </div>
-          </div>
-          <div class="navigateBlock" id="commercial">
-            <button class="navigateBlockBtn">Commercial</button>
-            <div class="navigateBlock-content">
-              <a href="#">Cabinet Refacing</a>
-              <a href="#">Cabinet Doors Replacement</a>
-              <a href="#">Thermofoil Cabinet Door Repair</a>
-              <a href="#">Decorative Wall Panels</a>
-            </div>
-          </div>
-          <div class="navigateBlock" id="gallery">
-            <button class="navigateBlockBtn">Gallery</button>
-            <div class="navigateBlock-content">
-              <a href="#">Cabinet Refacing</a>
-              <a href="#">Cabinet Doors Replacement</a>
-              <a href="#">Thermofoil Cabinet Door Repair</a>
-              <a href="#">Decorative Wall Panels</a>
-            </div>
-          </div>
-          <div class="navigateBlock" id="aboutUs">
-            <button class="navigateBlockBtn">About Us</button>
-            <div class="navigateBlock-content">
-              <a href="#">Cabinet Refacing</a>
-              <a href="#">Cabinet Doors Replacement</a>
-              <a href="#">Thermofoil Cabinet Door Repair</a>
-              <a href="#">Decorative Wall Panels</a>
-            </div>
-          </div>
-          <div class="navigateBlock" id="areasWeServe">
-            <button class="navigateBlockBtn">Areas We Serve</button>
-            <div class="navigateBlock-content">
-              <a href="#">Cabinet Refacing</a>
-              <a href="#">Cabinet Doors Replacement</a>
-              <a href="#">Thermofoil Cabinet Door Repair</a>
-              <a href="#">Decorative Wall Panels</a>
-            </div>
-          </div>
-          <div class="navigateBlock" id="contactUs">
-            <button class="navigateBlockBtn">Contact Us</button>
-            <div class="navigateBlock-content">
-              <a href="#">Cabinet Refacing</a>
-              <a href="#">Cabinet Doors Replacement</a>
-              <a href="#">Thermofoil Cabinet Door Repair</a>
-              <a href="#">Decorative Wall Panels</a>
-            </div>
-          </div>
-          <div class="navigateBlock" id="telephone">
-            <span>(800) 809-7197</span>
-          </div>
-        </nav>
-        <div class="getAFreeEstimate">
-          <button>Get a Free Estimate</button>
+        <div class="navigateBlock" id="commercial">
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Commercial
+          </button>
         </div>
-      </header>
-      <main>
-        <div class="faceImage">
-         asdHelloasd
+        <div class="navigateBlock" id="gallery">
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Gallery
+          </button>
         </div>
-      </main>
-      <footer>sus</footer>
-   
-</body>
+        <div class="navigateBlock" id="aboutUs">
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            About Us
+          </button>
+        </div>
+        <div class="navigateBlock" id="areasWeServe">
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Areas We Serve
+          </button>
+        </div>
+        <div class="navigateBlock" id="contactUs">
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Contact Us
+          </button>
+        </div>
+        <div class="navigateBlock" id="telephone">
+          <span>(800) 809-7197</span>
+        </div>
+      </nav>
+      <div class="getAFreeEstimate">
+        <button id="gfe" >Get a Free Estimate</button>
+      </div>
+    </header>
+    <main>
+      <section class="faceImage">
+        <h1>Your Kitchen Refacing Solution</h1>
+        <div class="bringingNewLifeL">
+          <span>
+            Bringing New Life to Your Kitchen Cabinets: American-Made,
+            Family-Owned Company
+          </span>
+        </div>
+        <div class="twoButtons">
+          <div class="getAFreeEstimate">
+            <button>Get Your Free Estimate</button>
+          </div>
+          <div class="viewProcess">
+            <button>View Our Process</button>
+          </div>
+        </div>
+      </section>
+      <section class="threeGoodStuff">
+        <div class="goodStuff">
+          <div class="svgIconLeft">
+            <img src="src/images/moneyBag.svg" alt="unlock 70% savings" />
+          </div>
+          <div class="textRight">
+            Unlock 70% savings: reface instead of replace
+          </div>
+        </div>
+        <div class="goodStuff" id="transform">
+          <div class="svgIconLeft">
+            <img src="src/images/clock.svg" alt="transform kitchen 3-5 days" />
+          </div>
+          <div class="textRight">Transform your kitchen in 3-5 days</div>
+        </div>
+        <div class="goodStuff" id="financing">
+          <div class="svgIconLeft">
+            <img src="src/images/giveMoneyBag.svg" alt="financing" />
+          </div>
+          <div class="textRight">Kitchen financing options available</div>
+        </div>
+      </section>
+      <section class="mainOurServices">
+        <h2>Our Services</h2>
+        <div class="tripleBlock">
+          <article class="cabinet" id="cabinetRefacing">
+            <div class="imageFurniture">
+              <img
+                src="src/images/cabinetRefacing.png"
+                alt="cabinet Refacing"
+              />
+            </div>
+            <div class="textAboutFurniture">
+              <div class="subHeading">Refresh Your Existing Kitchen with</div>
+              <h3>Cabinet Refacing</h3>
+              <div class="headingXS">Keep Your Existing Doors</div>
+              <div class="textS">
+                Our cabinet refacing service transforms the appearance of your
+                kitchen while preserving its original layout and the structure
+                of your existing cabinets and drawer fronts.
+              </div>
+              <div class="learnMore">
+                <button>Learn More</button>
+              </div>
+            </div>
+          </article>
+          <article class="cabinet" id="CabinetDoorReplacement">
+            <div class="imageFurniture">
+              <img
+                src="src/images/CabinetDoorReplacement.png"
+                alt="cabinet door replacement"
+              />
+            </div>
+            <div class="textAboutFurniture">
+              <div class="subHeading">Replace Your Cabinet Doors with</div>
+              <h3>Cabinet Door Replacement</h3>
+              <div class="headingXS">Custom-made Doors & Drawer Fronts</div>
+              <div class="textS">
+                If your cabinet doors and drawer fronts require a refresh, our
+                team can manufacture new cabinet doors in-house. We ensure the
+                new elements seamlessly blend with your existing kitchen,
+                providing an affordable and efficient upgrade.
+              </div>
+              <div class="learnMore">
+                <button>Learn More</button>
+              </div>
+            </div>
+          </article>
+          <article class="cabinet" id="Thermofoil Cabinet Door Repair">
+            <div class="imageFurniture">
+              <img
+                src="src/images/CabinetDoorReplacement.png"
+                alt="Thermofoil Cabinet Door Repair"
+              />
+            </div>
+            <div class="textAboutFurniture">
+              <div class="subHeading">
+                Renew Your Peeling Cabinet Doors with
+              </div>
+              <h3>Thermofoil Cabinet Door Repair</h3>
+              <div class="headingXS">Nationwide Shipping</div>
+              <div class="textS">
+                We are one of very few cabinet refacing companies who can do
+                this service at our workshop here in West Chicago, without
+                disrupting your daily routine. Just ship your peeling or
+                delaminating doors and fronts and get them back updated in less
+                time than ordering new ones. We offer 48h repairs for Illinois
+                residents.
+              </div>
+              <div class="learnMore">
+                <button>Learn More</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="titileTextButton">
+          <h2>Gallery</h2>
+          <div class="galleryMore">
+            <div class="bodyTextM">
+              Browse our gallery to see before and after photos of our previous
+              cabinet refacing projects. Our transformative work speaks for
+              itself.
+            </div>
+            <div class="browserTheGallery">
+              <button>Browse The Gallery</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+        
+              <img src="src/images/slide1_1.png" alt="slide1_image1" />
+              <img src="src/images/slide1_2.png" alt="slide1_image2" />
+            </div>
+            <div class="slide">
+           
+              <img src="src/images/slide2_1.png" alt="slide2_image1" />
+              <img src="src/images/slide2_2.png" alt="slide2_image2" />
+            </div>
+            <!-- Добавьте больше слайдов по необходимости -->
+          </div>
+          <div class="controls">
+            <div class="prev" onclick="prevSlide()">❮</div>
+            <div class="next" onclick="nextSlide()">❯</div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="headingAndSubText">
+          <h2>Testimonials</h2>
+          <div class="bodyTextM">
+            Read what our satisfied clients say about their experience with
+            Kitchen Cabinet Guys and the quality of our work.
+          </div>
+        </div>
+        <div class="comms">
+          <div class="comment">
+            <div class="stars">
+              <img src="src/images/stars.svg" alt="all stars" />
+            </div>
+            <div class="commentaryText">
+              THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I found
+              them on the Web (Google Search) and filled out a "Contact" form on
+              a Sat. I couldn't believe that Andrei called me on Sunday morn. -
+              I told my wife "I already like these guys!".
+            </div>
+            <div class="commentAuthor">Christopher Torre</div>
+          </div>
+          <div class="comment">
+            <div class="stars">
+              <img src="src/images/stars.svg" alt="all stars" />
+            </div>
+            <div class="commentaryText">
+              Andre and the team @ Kitchen Cabinet Guys LLC did a stunning
+              transformation of my family’s kitchen. Our realtor said we easily
+              increased the value of our home by $30k for less than a third of
+              the cost. If anyone is considering a new kitchen,
+            </div>
+            <div class="commentAuthor">Michael Jason</div>
+          </div>
+          <div class="comment">
+            <div class="stars">
+              <img src="src/images/stars.svg" alt="all stars" />
+            </div>
+            <div class="commentaryText">
+              THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I found
+              them on the Web (Google Search) and filled out a "Contact" form on
+              a Sat. I couldn't believe that Andrei called me on Sunday morn. -
+              I told my wife "I already like these guys!".
+            </div>
+            <div class="commentAuthor">Christopher Torre</div>
+          </div>
+        </div>
+        <div class="inputForma">
+          <div class="kitchenAndForma">
+            <div class="kitchen">
+              <img
+                src="src/images/kitchenInputForm.png"
+                alt="Take the First Step Towards Your Kitchen Makeover"
+              />
+            </div>
+            <form>
+              <h2>Take the First Step Towards Your Kitchen Makeover</h2>
+              <div class="bodyTextM">
+                Ready to transform your kitchen? Contact us today to get started
+                with your free estimate!
+              </div>
+              <div class="inputs">
+                <div class="names">
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                  />
+                  <input type="text" name="lastName" placeholder="Last Name" />
+                </div>
+                <div class="emailAndPhone">
+                  <input type="email" name="email" placeholder="Email" />
+                  <input type="phone" name="phone" placeholder="Phone" />
+                </div>
+                <div class="addressServicesMessage">
+                  <input type="text" name="adress" placeholder="Address" />
+                  <div class="dropdown">
+                    <select name="services" id="services-select">
+                      <option value="">Services</option>
+                      <option value="CabinetRefacing">Cabinet Refacing</option>
+                      <option value="CabinetDoorsReplacement">
+                        Cabinet Doors Replacement
+                      </option>
+                      <option value="ThermofoilCabinetDoorRepair">
+                        Thermofoil Cabinet Door Repair
+                      </option>
+                      <option value="DecorativeWallPanels">
+                        Decorative Wall Panels
+                      </option>
+                    </select>
+                  </div>
+                  <input
+                    type="text"
+                    name="message"
+                    placeholder="Message"
+                    id="message"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="defaultButton">
+                Get A Free Estimate
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info">
+        <div class="infoBlock">
+          Physical Address:
+          <a href="#"
+            ><span
+              >245 W. Roosevelt Rd 4 Unit 29,<br />
+              West Chicago, IL 60185</span
+            ></a
+          >
+        </div>
+        <div class="infoBlock">
+          Phone:
+          <a href="#"><span>(800) 809-7197</span></a>
+        </div>
+        <div class="infoBlock">
+          Hours of Operation:
+
+          <span
+            >Our Online Support is available 24/7 <br />Monday – Friday: 9:00 AM
+            – 5:00 PM <br />Saturday: 9:00 AM – 2:00 PM <br />Sunday:
+            Closed</span
+          >
+        </div>
+      </div>
+      <div class="followUs">
+        <div class="followBlock">
+          Follow Us:
+          <div class="doubleFollow">
+            <img
+              src="src/images/followUsToEclipse.svg"
+              alt="follow us to ellipse"
+            />
+            <img
+              src="src/images/followUsToFacebook.svg"
+              alt="follow us to facebook"
+            />
+          </div>
+        </div>
+        <div class="followBlock">
+          Brought to you by
+          <div class="imageBrought">
+            <img src="src/images/Thermoflip Logo.png" alt="Thermoflip Logo" />
+          </div>
+        </div>
+        <div class="followBlock">
+          <div class="tripleRating">
+            <img src="src/images/homeAd.png" alt="good by home ad" />
+            <img src="src/images/3smth.png" alt="3 mean good" />
+            <img src="src/images/aRating.png" alt="a+ rating" />
+          </div>
+          Copyright © 2023 Kitchen Cabinet Guys - All Rights Reserved
+        </div>
+      </div>
+      <div class="blogFaq">
+        <div class="blog">Blog</div>
+        <div class="faq">FAQ</div>
+      </div>
+      <div class="privacePolicy">
+        <div class="privacyBlock">Privacy Policy</div>
+        <div class="termsCondition">Terms & Conditions</div>
+        <div class="createBy">
+          Created By <a href="#">Comrade Digital Marketing Agency</a>
+        </div>
+      </div>
+    </footer>
+    <script src="dist/js/main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,79 @@
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/fonts';
+@import '../base/adaptation';
+// Основной стиль для футера
+footer {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 514px;
+    margin-top: -5%;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    background-color: #342F28;
+    padding-bottom: 60px;
+}
+
+// Общий миксин для блоков с текстом
+
+
+// Блок информации
+.info {
+    @include footerTextBlock();
+
+    a {
+        color: $buttonDefaultColor;
+    }
+
+    span {
+        @include bodyTextM();
+    }
+}
+
+// Блок для социальных сетей
+.followUs {
+    @include footerTextBlock();
+}
+
+// Блок для блога и FAQ
+.blogFaq {
+    @include footerTextBlock();
+}
+
+// Блок для политики конфиденциальности
+.privacePolicy {
+    @include footerTextBlock();
+}
+
+// Общие стили для блоков с элементами
+@mixin footerBlock {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+// Применение стилей для блоков внутри футера
+.infoBlock {
+    @include footerBlock();
+}
+
+.followBlock {
+  
+    @include footerBlock();
+}
+
+.tripleRating{
+    display: flex;
+    gap: 24px;
+}
+// Создано на
+.createBy {
+    margin-left: -100px;
+    margin-top: 200px;
+
+    a {
+        color: $buttonDefaultColor;
+    }
+}

@@ -1,0 +1,219 @@
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin heading1 {
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 110%;
+    color: $headerBgColor;
+    @media (max-width: 767px) {
+        font-size: 42px;
+        line-height: 110%;
+    }
+}
+
+@mixin heading2 {
+    @media (max-width: 767px) {
+        font-size: 32px;
+        line-height: 120%;
+    }
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: $headerBgColor;
+ 
+}
+
+@mixin heading3 {
+    @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: $headerBgColor;
+ 
+}
+
+@mixin heading4 {
+    @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 120%;
+    }
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color: $headerBgColor;
+   
+}
+
+@mixin heading5 {
+    @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 150%;
+    }
+    font-family: "Red Hat Display";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: $headerBgColor;
+
+}
+
+@mixin bodyTextL {
+    @media (max-width: 767px) {
+        font-size: 18px;
+        line-height: 150%;
+    }
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+ 
+}
+
+@mixin bodyTextM {
+    @media (max-width: 767px) {
+        font-size: 18px;
+        line-height: 150%;
+    }
+    @include bodyTextL();
+    font-size: 18px;
+ 
+}
+
+@mixin bodyTextS {
+    @include bodyTextL();
+    font-size: 16px;
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+@mixin bodyTextXS {
+    @include bodyTextL();
+    font-size: 14px;
+}
+
+@mixin buttonText{
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+@mixin subHeading {
+    font-family: "Manrope";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+@mixin inputHeading {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 150%;
+}
+
+
+@mixin defaultButton {
+    border: none;
+    border-radius: 72px;
+    padding: 24px 32px;
+    width: 212px;
+    height: 72px;
+    background: $buttonDefaultColor;
+    color: #fff;
+}
+
+@mixin learnMoreButton {
+    color: #45280a;
+    border: 1px solid #45280a;
+    border-radius: 72px;
+    padding: 24px 32px;
+    width: 150px;
+    height: 72px;
+    background-color: none;
+}
+
+
+@mixin hoverButton {
+    border: none;
+    border-radius: 72px;
+    padding: 24px 32px;
+    width: 212px;
+    height: 72px;
+    background: $buttonHoverColor;
+    color: $textColor;
+}
+
+@mixin inputButton {
+    padding: 0 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 16px;
+    width: 238px;
+    height: 48px;
+    background: #fff;
+}
+
+@mixin buttonStyles($width, $height, $background, $color) {
+    border-radius: 72px;
+    padding: 24px 32px;
+    width: $width;
+    height: $height;
+    background-color: $background;
+    color: $color;
+}
+
+@mixin sectionStyles($width, $flexDirection, $gap) {
+    display: flex;
+    flex-direction: $flexDirection;
+    gap: $gap;
+    width: $width;
+}
+
+@mixin centeredText($textAlign, $width) {
+    text-align: $textAlign;
+    width: $width;
+}
+@mixin sliderButton($position) {
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 72px;
+    user-select: none;
+    transform: translateY(-50%);
+    border: 1px solid #F6F3EC;
+    border-radius: 100%;
+    $position: $position;
+}
+
+@mixin footerTextBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 5%;
+    margin-top: 10%;
+    @include buttonText();
+    color: #FFFBF4;
+}
+
+
