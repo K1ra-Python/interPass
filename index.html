@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="dist/css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header id="myHeader">
       <div class="logo">
         <img src="/src/images/logo.svg" alt="logo" />
       </div>
-      <nav>
+      <nav id="myNav">
         <div class="dropdown" id="services">
           <button
             aria-haspopup="true"
@@ -78,7 +78,7 @@
         </div>
       </nav>
       <div class="getAFreeEstimate">
-        <button>Get a Free Estimate</button>
+        <button id="gfe" >Get a Free Estimate</button>
       </div>
     </header>
     <main>
@@ -212,12 +212,12 @@
         <div class="slider">
           <div class="slides">
             <div class="slide">
-              <button id="before">Before</button>
+        
               <img src="src/images/slide1_1.png" alt="slide1_image1" />
               <img src="src/images/slide1_2.png" alt="slide1_image2" />
             </div>
             <div class="slide">
-              <button id="after">After</button>
+           
               <img src="src/images/slide2_1.png" alt="slide2_image1" />
               <img src="src/images/slide2_2.png" alt="slide2_image2" />
             </div>
@@ -237,99 +237,101 @@
             Kitchen Cabinet Guys and the quality of our work.
           </div>
         </div>
-            <div class="comms">
-              <div class="comment">
-                <div class="stars">
-                  <img src="src/images/stars.svg" alt="all stars" />
-                </div>
-                <div class="commentaryText">
-                  THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I
-                  found them on the Web (Google Search) and filled out a
-                  "Contact" form on a Sat. I couldn't believe that Andrei called
-                  me on Sunday morn. - I told my wife "I already like these
-                  guys!".
-                </div>
-                <div class="commentAuthor">Christopher Torre</div>
-              </div>
-              <div class="comment">
-                <div class="stars">
-                  <img src="src/images/stars.svg" alt="all stars" />
-                </div>
-                <div class="commentaryText">
-                  Andre and the team @ Kitchen Cabinet Guys LLC did a stunning
-                  transformation of my family’s kitchen. Our realtor said we
-                  easily increased the value of our home by $30k for less than a
-                  third of the cost. If anyone is considering a new kitchen,
-                </div>
-                <div class="commentAuthor">Michael Jason</div>
-              </div>
-              <div class="comment">
-                <div class="stars">
-                  <img src="src/images/stars.svg" alt="all stars" />
-                </div>
-                <div class="commentaryText">
-                  THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I
-                  found them on the Web (Google Search) and filled out a
-                  "Contact" form on a Sat. I couldn't believe that Andrei called
-                  me on Sunday morn. - I told my wife "I already like these
-                  guys!".
-                </div>
-                <div class="commentAuthor">Christopher Torre</div>
-              </div>
+        <div class="comms">
+          <div class="comment">
+            <div class="stars">
+              <img src="src/images/stars.svg" alt="all stars" />
             </div>
+            <div class="commentaryText">
+              THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I found
+              them on the Web (Google Search) and filled out a "Contact" form on
+              a Sat. I couldn't believe that Andrei called me on Sunday morn. -
+              I told my wife "I already like these guys!".
+            </div>
+            <div class="commentAuthor">Christopher Torre</div>
           </div>
-      <div class="inputForma">
-        <div class="kitchenAndForma">
-          <div class="kitchen">
-            <img
-              src="src/images/kitchenInputForm.png"
-              alt="Take the First Step Towards Your Kitchen Makeover"
-            />
+          <div class="comment">
+            <div class="stars">
+              <img src="src/images/stars.svg" alt="all stars" />
+            </div>
+            <div class="commentaryText">
+              Andre and the team @ Kitchen Cabinet Guys LLC did a stunning
+              transformation of my family’s kitchen. Our realtor said we easily
+              increased the value of our home by $30k for less than a third of
+              the cost. If anyone is considering a new kitchen,
+            </div>
+            <div class="commentAuthor">Michael Jason</div>
           </div>
-          <form>
-            <h2>Take the First Step Towards Your Kitchen Makeover</h2>
-            <div class="bodyTextM">
-              Ready to transform your kitchen? Contact us today to get started
-              with your free estimate!
+          <div class="comment">
+            <div class="stars">
+              <img src="src/images/stars.svg" alt="all stars" />
             </div>
-            <div class="inputs">
-              <div class="names">
-                <input type="text" name="firstName" placeholder="First Name" />
-                <input type="text" name="lastName" placeholder="Last Name" />
+            <div class="commentaryText">
+              THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I found
+              them on the Web (Google Search) and filled out a "Contact" form on
+              a Sat. I couldn't believe that Andrei called me on Sunday morn. -
+              I told my wife "I already like these guys!".
+            </div>
+            <div class="commentAuthor">Christopher Torre</div>
+          </div>
+        </div>
+        <div class="inputForma">
+          <div class="kitchenAndForma">
+            <div class="kitchen">
+              <img
+                src="src/images/kitchenInputForm.png"
+                alt="Take the First Step Towards Your Kitchen Makeover"
+              />
+            </div>
+            <form>
+              <h2>Take the First Step Towards Your Kitchen Makeover</h2>
+              <div class="bodyTextM">
+                Ready to transform your kitchen? Contact us today to get started
+                with your free estimate!
               </div>
-              <div class="emailAndPhone">
-                <input type="email" name="email" placeholder="Email" />
-                <input type="phone" name="phone" placeholder="Phone" />
-              </div>
-              <div class="addressServicesMessage">
-                <input type="text" name="adress" placeholder="Address" />
-                <div class="dropdown">
-                  <select name="services" id="services-select">
-                    <option value="">Services</option>
-                    <option value="CabinetRefacing">Cabinet Refacing</option>
-                    <option value="CabinetDoorsReplacement">
-                      Cabinet Doors Replacement
-                    </option>
-                    <option value="ThermofoilCabinetDoorRepair">
-                      Thermofoil Cabinet Door Repair
-                    </option>
-                    <option value="DecorativeWallPanels">
-                      Decorative Wall Panels
-                    </option>
-                  </select>
+              <div class="inputs">
+                <div class="names">
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First Name"
+                  />
+                  <input type="text" name="lastName" placeholder="Last Name" />
                 </div>
-                <input
-                  type="text"
-                  name="message"
-                  placeholder="Message"
-                  id="message"
-                />
+                <div class="emailAndPhone">
+                  <input type="email" name="email" placeholder="Email" />
+                  <input type="phone" name="phone" placeholder="Phone" />
+                </div>
+                <div class="addressServicesMessage">
+                  <input type="text" name="adress" placeholder="Address" />
+                  <div class="dropdown">
+                    <select name="services" id="services-select">
+                      <option value="">Services</option>
+                      <option value="CabinetRefacing">Cabinet Refacing</option>
+                      <option value="CabinetDoorsReplacement">
+                        Cabinet Doors Replacement
+                      </option>
+                      <option value="ThermofoilCabinetDoorRepair">
+                        Thermofoil Cabinet Door Repair
+                      </option>
+                      <option value="DecorativeWallPanels">
+                        Decorative Wall Panels
+                      </option>
+                    </select>
+                  </div>
+                  <input
+                    type="text"
+                    name="message"
+                    placeholder="Message"
+                    id="message"
+                  />
+                </div>
               </div>
-            </div>
-            <button type="submit" class="defaultButton">
-              Get A Free Estimate
-            </button>
-          </form>
+              <button type="submit" class="defaultButton">
+                Get A Free Estimate
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

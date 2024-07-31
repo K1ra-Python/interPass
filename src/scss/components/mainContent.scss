@@ -2,9 +2,11 @@
 @import '../base/mixins';
 @import '../base/fonts';
 @import '../base/adaptation';
+
 body {
     overflow-x: hidden;
-    button{
+
+    button {
         cursor: pointer;
     }
 }
@@ -49,11 +51,9 @@ main {
     }
 }
 
-.viewProcess {
-    button {
-        background-color: #ffffff00;
-        color: #ffffff;
-    }
+.viewProcess button {
+    background-color: #ffffff00;
+    color: #ffffff;
 }
 
 .threeGoodStuff {
@@ -151,7 +151,7 @@ h3 {
     .bodyTextM {
         @include bodyTextM();
         color: #5E5E5E;
-        width:60%;
+        width: 60%;
     }
 }
 
@@ -215,7 +215,6 @@ h3 {
     margin-bottom: 5%;
 }
 
-
 .show {
     display: block;
 }
@@ -253,16 +252,17 @@ h3 {
         width: 484px;
         border: 1px solid #D9D9D9;
     }
-    
+
     .dropdown {
         position: relative;
         display: inline-block;
-    
+
         select {
             @include inputButton();
             width: 484px;
         }
     }
+
     input {
         width: 484px;
     }
@@ -275,5 +275,5 @@ h3 {
 .defaultButton {
     margin-top: 16px;
     @include defaultButton();
-    width: 484px;
+    width: 484px
 }
