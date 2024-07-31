@@ -1,8 +1,9 @@
 @import '../base/variables';
 @import '../base/mixins';
 @import '../base/fonts';
-
-footer{
+@import '../base/adaptation';
+// Основной стиль для футера
+footer {
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -10,77 +11,69 @@ footer{
     margin-top: -5%;
     z-index: 0;
     position: relative;
-
     width: 100%;
     background-color: #342F28;
     padding-bottom: 60px;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 0 5%;
-    margin-top: 10%;
-    @include buttonText();
-    color: #FFFBF4;
- 
-    a{
+// Общий миксин для блоков с текстом
+
+
+// Блок информации
+.info {
+    @include footerTextBlock();
+
+    a {
         color: $buttonDefaultColor;
     }
-    span{
+
+    span {
         @include bodyTextM();
     }
+}
+
+// Блок для социальных сетей
+.followUs {
+    @include footerTextBlock();
+}
+
+// Блок для блога и FAQ
+.blogFaq {
+    @include footerTextBlock();
+}
+
+// Блок для политики конфиденциальности
+.privacePolicy {
+    @include footerTextBlock();
+}
+
+// Общие стили для блоков с элементами
+@mixin footerBlock {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+// Применение стилей для блоков внутри футера
+.infoBlock {
+    @include footerBlock();
+}
+
+.followBlock {
   
+    @include footerBlock();
 }
 
-.infoBlock{
-    gap: 8px;
+.tripleRating{
     display: flex;
-    flex-direction: column;
-    
-}
-
-.followUs{
-    display: flex;
-    flex-direction: column;
     gap: 24px;
-    padding: 0 5%;
-    margin-top: 10%;
-    @include buttonText();
-    color: #FFFBF4;
 }
-
-.followBlock{
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-}
-
-.blogFaq{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 0 5%;
-    margin-top: 10%;
-    @include buttonText();
-    color: #FFFBF4;
-}
-
-.privacePolicy{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 0 5%;
-    margin-top: 10%;
-    @include buttonText();
-    color: #FFFBF4;
-}
-
-.createBy{
+// Создано на
+.createBy {
     margin-left: -100px;
     margin-top: 200px;
-    a{
+
+    a {
         color: $buttonDefaultColor;
     }
 }

@@ -1,45 +1,44 @@
 @import '../base/variables';
 @import '../base/mixins';
 @import '../base/fonts';
-
-
+@import '../base/adaptation';
+// Основной контейнер галереи
 .gallery {
     margin-top: 10%;
+    border-radius: 100px;
+    //height: calc(100vh + 10px);
     width: 160vh;
-    /* Изменено на 100%, чтобы адаптироваться к родительскому контейнеру */
-  
-    /* Изменено на 100%, чтобы занять всю высоту контейнера */
-    background-image: url('/src/images/galleryBackground.png');
-    background-repeat: no-repeat;
+    height: 100%; // Убедитесь, что высота контейнера адаптируется к родительскому элементу
+    background: url('/src/images/galleryBackground.png') no-repeat center center;
     background-size: cover;
-    /* Обеспечивает полное покрытие фона */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* Скрыть всё, что выходит за пределы фона */
     padding: 2%;
 }
 
+// Контейнер слайдера
 .slider {
     width: 70%;
-    //max-width: 600px; /* Максимальная ширина слайдера */
     overflow: hidden;
     position: relative;
-    /* Для правильного позиционирования кнопок */
 }
 
+// Область слайдов
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
+// Индивидуальные слайды
 .slide {
     min-width: 100%;
     box-sizing: border-box;
     display: flex;
     gap: 24px;
+    position: relative; // Убедитесь, что позиционирование кнопок относительно слайда
 
     button {
         @include defaultButton();
@@ -51,64 +50,51 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    #before{
-        
-        left: 3%;
-        top: 5%;
-    }
-    #after{
-        left: 53%;
-        top: 5%;
+
+        // Миксин для кнопок управления
+    
+
+        #before {
+            @include sliderButton(left);
+            left: 3%;
+            top: 5%;
+        }
+
+        #after {
+            @include sliderButton(right);
+            right: 3%;
+            top: 5%;
+        }
     }
 }
 
+// Изображения слайдов
 .slide img {
     width: 100%;
     display: block;
-    /* Убедитесь, что изображение не имеет лишних отступов */
 }
 
+// Контейнер управления слайдером
 .controls {
     margin-top: 80px;
     display: flex;
     gap: 15px;
     justify-content: end;
-  
 }
 
+// Кнопки управления слайдером
 .prev,
 .next {
     cursor: pointer;
-    width: 72px;
-    height: 72px;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    line-height: 72px;
-    user-select: none;
-    transform: translateY(-50%);
-    border: 1px solid #F6F3EC;
-    border-radius: 100%;
+    @include sliderButton(center);
 }
 
-.prev {
-    left: 10px;
-    /* Расстояние от левого края */
-}
-
-.next {
-    right: 10px;
-    /* Расстояние от правого края */
-}
-
+// Заголовок и кнопка "Больше" в галерее
 .titileTextButton {
     padding-top: 2%;
     width: 100%;
     display: flex;
     justify-content: space-between;
-
 
     h2 {
         margin-top: -10px;
@@ -117,6 +103,7 @@
     }
 }
 
+// Дополнительные стили
 .galleryMore {
     margin-left: 40%;
     display: flex;
@@ -128,22 +115,17 @@
 .bodyTextM {
     @include bodyTextM();
     color: #f6f3ec;
-
 }
 
 .browserTheGallery {
     button {
+        @include learnMoreButton();
+        border-color: #f6f3ec;
         background-color: #ffffff00;
         color: #ffffff;
         border-radius: 72px;
         padding: 24px 32px;
         width: 237px;
         height: 72px;
-
-        &:hover {
-            @include hoverButton();
-            width: 237px;
-            height: 72px;
-        }
     }
 }

@@ -12,9 +12,16 @@
         <img src="/src/images/logo.svg" alt="logo" />
       </div>
       <nav>
-        <div class="navigateBlock" id="services">
-          <button class="navigateBlockBtn">Services</button>
-          <div class="navigateBlock-content">
+        <div class="dropdown" id="services">
+          <button
+            aria-haspopup="true"
+            aria-expanded="false"
+            onclick="myFunction()"
+            class="dropbtn"
+          >
+            Services
+          </button>
+          <div id="myDropdown" class="dropdown-content">
             <a href="#">Cabinet Refacing</a>
             <a href="#">Cabinet Doors Replacement</a>
             <a href="#">Thermofoil Cabinet Door Repair</a>
@@ -22,49 +29,49 @@
           </div>
         </div>
         <div class="navigateBlock" id="commercial">
-          <button class="navigateBlockBtn">Commercial</button>
-          <div class="navigateBlock-content">
-            <a href="#">Cabinet Refacing</a>
-            <a href="#">Cabinet Doors Replacement</a>
-            <a href="#">Thermofoil Cabinet Door Repair</a>
-            <a href="#">Decorative Wall Panels</a>
-          </div>
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Commercial
+          </button>
         </div>
         <div class="navigateBlock" id="gallery">
-          <button class="navigateBlockBtn">Gallery</button>
-          <div class="navigateBlock-content">
-            <a href="#">Cabinet Refacing</a>
-            <a href="#">Cabinet Doors Replacement</a>
-            <a href="#">Thermofoil Cabinet Door Repair</a>
-            <a href="#">Decorative Wall Panels</a>
-          </div>
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Gallery
+          </button>
         </div>
         <div class="navigateBlock" id="aboutUs">
-          <button class="navigateBlockBtn">About Us</button>
-          <div class="navigateBlock-content">
-            <a href="#">Cabinet Refacing</a>
-            <a href="#">Cabinet Doors Replacement</a>
-            <a href="#">Thermofoil Cabinet Door Repair</a>
-            <a href="#">Decorative Wall Panels</a>
-          </div>
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            About Us
+          </button>
         </div>
         <div class="navigateBlock" id="areasWeServe">
-          <button class="navigateBlockBtn">Areas We Serve</button>
-          <div class="navigateBlock-content">
-            <a href="#">Cabinet Refacing</a>
-            <a href="#">Cabinet Doors Replacement</a>
-            <a href="#">Thermofoil Cabinet Door Repair</a>
-            <a href="#">Decorative Wall Panels</a>
-          </div>
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Areas We Serve
+          </button>
         </div>
         <div class="navigateBlock" id="contactUs">
-          <button class="navigateBlockBtn">Contact Us</button>
-          <div class="navigateBlock-content">
-            <a href="#">Cabinet Refacing</a>
-            <a href="#">Cabinet Doors Replacement</a>
-            <a href="#">Thermofoil Cabinet Door Repair</a>
-            <a href="#">Decorative Wall Panels</a>
-          </div>
+          <button
+            class="navigateBlockBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Contact Us
+          </button>
         </div>
         <div class="navigateBlock" id="telephone">
           <span>(800) 809-7197</span>
@@ -75,7 +82,7 @@
       </div>
     </header>
     <main>
-      <div class="faceImage">
+      <section class="faceImage">
         <h1>Your Kitchen Refacing Solution</h1>
         <div class="bringingNewLifeL">
           <span>
@@ -91,8 +98,8 @@
             <button>View Our Process</button>
           </div>
         </div>
-      </div>
-      <div class="threeGoodStuff">
+      </section>
+      <section class="threeGoodStuff">
         <div class="goodStuff">
           <div class="svgIconLeft">
             <img src="src/images/moneyBag.svg" alt="unlock 70% savings" />
@@ -113,11 +120,11 @@
           </div>
           <div class="textRight">Kitchen financing options available</div>
         </div>
-      </div>
-      <div class="mainOurServices">
+      </section>
+      <section class="mainOurServices">
         <h2>Our Services</h2>
         <div class="tripleBlock">
-          <div class="cabinet" id="cabinetRefacing">
+          <article class="cabinet" id="cabinetRefacing">
             <div class="imageFurniture">
               <img
                 src="src/images/cabinetRefacing.png"
@@ -137,8 +144,8 @@
                 <button>Learn More</button>
               </div>
             </div>
-          </div>
-          <div class="cabinet" id="CabinetDoorReplacement">
+          </article>
+          <article class="cabinet" id="CabinetDoorReplacement">
             <div class="imageFurniture">
               <img
                 src="src/images/CabinetDoorReplacement.png"
@@ -159,8 +166,8 @@
                 <button>Learn More</button>
               </div>
             </div>
-          </div>
-          <div class="cabinet" id="Thermofoil Cabinet Door Repair">
+          </article>
+          <article class="cabinet" id="Thermofoil Cabinet Door Repair">
             <div class="imageFurniture">
               <img
                 src="src/images/CabinetDoorReplacement.png"
@@ -185,10 +192,10 @@
                 <button>Learn More</button>
               </div>
             </div>
-          </div>
+          </article>
         </div>
-      </div>
-      <div class="gallery">
+      </section>
+      <section class="gallery">
         <div class="titileTextButton">
           <h2>Gallery</h2>
           <div class="galleryMore">
@@ -221,8 +228,8 @@
             <div class="next" onclick="nextSlide()">❯</div>
           </div>
         </div>
-      </div>
-      <div class="Testimonials">
+      </section>
+      <section class="testimonials">
         <div class="headingAndSubText">
           <h2>Testimonials</h2>
           <div class="bodyTextM">
@@ -230,45 +237,47 @@
             Kitchen Cabinet Guys and the quality of our work.
           </div>
         </div>
-        <div class="comms">
-          <div class="comment">
-            <div class="stars">
-              <img src="src/images/stars.svg" alt="all stars" />
+            <div class="comms">
+              <div class="comment">
+                <div class="stars">
+                  <img src="src/images/stars.svg" alt="all stars" />
+                </div>
+                <div class="commentaryText">
+                  THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I
+                  found them on the Web (Google Search) and filled out a
+                  "Contact" form on a Sat. I couldn't believe that Andrei called
+                  me on Sunday morn. - I told my wife "I already like these
+                  guys!".
+                </div>
+                <div class="commentAuthor">Christopher Torre</div>
+              </div>
+              <div class="comment">
+                <div class="stars">
+                  <img src="src/images/stars.svg" alt="all stars" />
+                </div>
+                <div class="commentaryText">
+                  Andre and the team @ Kitchen Cabinet Guys LLC did a stunning
+                  transformation of my family’s kitchen. Our realtor said we
+                  easily increased the value of our home by $30k for less than a
+                  third of the cost. If anyone is considering a new kitchen,
+                </div>
+                <div class="commentAuthor">Michael Jason</div>
+              </div>
+              <div class="comment">
+                <div class="stars">
+                  <img src="src/images/stars.svg" alt="all stars" />
+                </div>
+                <div class="commentaryText">
+                  THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I
+                  found them on the Web (Google Search) and filled out a
+                  "Contact" form on a Sat. I couldn't believe that Andrei called
+                  me on Sunday morn. - I told my wife "I already like these
+                  guys!".
+                </div>
+                <div class="commentAuthor">Christopher Torre</div>
+              </div>
             </div>
-            <div class="commentaryText">
-              THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I found
-              them on the Web (Google Search) and filled out a "Contact" form on
-              a Sat. I couldn't believe that Andrei called me on Sunday morn. -
-              I told my wife "I already like these guys!".
-            </div>
-            <div class="commentAuthor">Christopher Torre</div>
           </div>
-          <div class="comment">
-            <div class="stars">
-              <img src="src/images/stars.svg" alt="all stars" />
-            </div>
-            <div class="commentaryText">
-              Andre and the team @ Kitchen Cabinet Guys LLC did a stunning
-              transformation of my family’s kitchen. Our realtor said we easily
-              increased the value of our home by $30k for less than a third of
-              the cost. If anyone is considering a new kitchen,
-            </div>
-            <div class="commentAuthor">Michael Jason</div>
-          </div>
-          <div class="comment">
-            <div class="stars">
-              <img src="src/images/stars.svg" alt="all stars" />
-            </div>
-            <div class="commentaryText">
-              THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I found
-              them on the Web (Google Search) and filled out a "Contact" form on
-              a Sat. I couldn't believe that Andrei called me on Sunday morn. -
-              I told my wife "I already like these guys!".
-            </div>
-            <div class="commentAuthor">Christopher Torre</div>
-          </div>
-        </div>
-      </div>
       <div class="inputForma">
         <div class="kitchenAndForma">
           <div class="kitchen">
@@ -277,7 +286,6 @@
               alt="Take the First Step Towards Your Kitchen Makeover"
             />
           </div>
-
           <form>
             <h2>Take the First Step Towards Your Kitchen Makeover</h2>
             <div class="bodyTextM">
@@ -294,9 +302,9 @@
                 <input type="phone" name="phone" placeholder="Phone" />
               </div>
               <div class="addressServicesMessage">
-                <input type="text" name="adress" placeholder="Adress" />
+                <input type="text" name="adress" placeholder="Address" />
                 <div class="dropdown">
-                  <select name="services" id="pet-select">
+                  <select name="services" id="services-select">
                     <option value="">Services</option>
                     <option value="CabinetRefacing">Cabinet Refacing</option>
                     <option value="CabinetDoorsReplacement">
@@ -323,7 +331,7 @@
             </button>
           </form>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <div class="info">
@@ -331,7 +339,8 @@
           Physical Address:
           <a href="#"
             ><span
-              >245 W. Roosevelt Rd 4 Unit 29,<br> West Chicago, IL 60185</span
+              >245 W. Roosevelt Rd 4 Unit 29,<br />
+              West Chicago, IL 60185</span
             ></a
           >
         </div>
@@ -343,8 +352,9 @@
           Hours of Operation:
 
           <span
-            >Our Online Support is available 24/7 <br>Monday – Friday: 9:00 AM –
-            5:00 PM <br>Saturday: 9:00 AM – 2:00 PM <br>Sunday: Closed</span
+            >Our Online Support is available 24/7 <br />Monday – Friday: 9:00 AM
+            – 5:00 PM <br />Saturday: 9:00 AM – 2:00 PM <br />Sunday:
+            Closed</span
           >
         </div>
       </div>
@@ -352,41 +362,38 @@
         <div class="followBlock">
           Follow Us:
           <div class="doubleFollow">
-            <img src="/src/images/followUsToEclipse.svg" alt="follow us to ellipse">
-            <img src="/src/images/followUsToFacebook.svg" alt="follow us to facebook"> 
+            <img
+              src="/src/images/followUsToEclipse.svg"
+              alt="follow us to ellipse"
+            />
+            <img
+              src="/src/images/followUsToFacebook.svg"
+              alt="follow us to facebook"
+            />
           </div>
         </div>
         <div class="followBlock">
           Brought to you by
           <div class="imageBrought">
-            <img src="src/images/Thermoflip Logo.png">
-
+            <img src="src/images/Thermoflip Logo.png" alt="Thermoflip Logo" />
           </div>
         </div>
         <div class="followBlock">
           <div class="tripleRating">
-            <img src="/src/images/homeAd.png" alt="good by home ad">
-            <img src="/src/images/3smth.png" alt="3 mean good">
-            <img src="/src/images/aRating.png" alt="a+ rating">
+            <img src="/src/images/homeAd.png" alt="good by home ad" />
+            <img src="/src/images/3smth.png" alt="3 mean good" />
+            <img src="/src/images/aRating.png" alt="a+ rating" />
           </div>
           Copyright © 2023 Kitchen Cabinet Guys - All Rights Reserved
         </div>
       </div>
       <div class="blogFaq">
-        <div class="blog">
-        Blog
-        </div>
-        <div class="faq">
-          FAQ
-        </div>
+        <div class="blog">Blog</div>
+        <div class="faq">FAQ</div>
       </div>
       <div class="privacePolicy">
-        <div class="privacyBlock">
-          Privacy Policy
-        </div>
-        <div class="termsCondition">
-          Terms & Conditions
-        </div>
+        <div class="privacyBlock">Privacy Policy</div>
+        <div class="termsCondition">Terms & Conditions</div>
         <div class="createBy">
           Created By <a href="#">Comrade Digital Marketing Agency</a>
         </div>

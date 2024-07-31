@@ -1,7 +1,8 @@
 @import '../base/variables';
 @import '../base/mixins';
 @import '../base/fonts';
-
+@import '../base/dropStyle';
+@import '../base/adaptation';
 
 // Основной стиль для body
 body {
@@ -110,6 +111,7 @@ h1 {
 
         &:hover {
             @include hoverButton();
+           
         }
     }
 }
