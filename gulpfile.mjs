@@ -11,6 +11,7 @@ import concat from 'gulp-concat';
 import uglify from 'gulp-uglify';
 import plumber from 'gulp-plumber';
 import imagemin from 'gulp-imagemin';
+import replace from 'gulp-replace';
 
 const paths = {
     styles: {
@@ -39,6 +40,7 @@ function styles() {
             basename: "main",
             suffix: ".min"
         }))
+        .pipe(replace('/src/images/', '../images/')) // Заменяет пути в CSS
         .pipe(sourcemaps.write("."))
         .pipe(gulp.dest(paths.styles.dest))
         .pipe(server.stream());
@@ -70,6 +72,8 @@ function images() {
 
 function html() {
     return gulp.src(paths.html.src)
+        .pipe(replace('/src/images/', 'dist/images/')) // Заменяет пути в HTML
+        .pipe(gulp.dest('./'))
         .pipe(server.stream());
 }
 
@@ -87,4 +91,4 @@ function watch() {
 
 export { styles, scripts, images, html, watch };
 
-export default gulp.series(styles, scripts, images, watch);
+export default gulp.series(styles, scripts, images, html, watch);
