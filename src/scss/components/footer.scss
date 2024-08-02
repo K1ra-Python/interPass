@@ -4,16 +4,7 @@
 @import '../base/adaptation';
 // Основной стиль для футера
 footer {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
 
-    margin-top: -5%;
-    z-index: 0;
-    position: relative;
-    width: 100%;
-    background-color: #342F28;
-    padding-bottom: 60px;
 }
 
 // Общий миксин для блоков с текстом
