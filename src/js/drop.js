@@ -4,8 +4,8 @@ function myFunction() {
   
   // Закройте выпадающее меню, если пользователь щелкает за его пределами
   window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
+    if (!event.target.matches('.dropdown__button')) {
+      var dropdowns = document.getElementsByClassName("dropdown__content");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];

@@ -5,182 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project</title>
     <link rel="stylesheet" href="dist/css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
   </head>
   <body>
-    <header id="myHeader">
-      <div class="logo">
+    <header class="header">
+      <div class="header__logo">
         <img src="src/images/logo.svg" alt="logo" />
       </div>
-      <nav id="myNav">
-        <div class="dropdown" id="services">
+      <nav class="header__nav">
+        <div class="dropdown header__dropdown">
           <button
             aria-haspopup="true"
             aria-expanded="false"
             onclick="myFunction()"
-            class="dropbtn"
+            class="dropdown__button"
           >
             Services
           </button>
-          <div id="myDropdown" class="dropdown-content">
+          <div class="dropdown__content">
             <a href="#">Cabinet Refacing</a>
             <a href="#">Cabinet Doors Replacement</a>
             <a href="#">Thermofoil Cabinet Door Repair</a>
             <a href="#">Decorative Wall Panels</a>
           </div>
         </div>
-        <div class="navigateBlock" id="commercial">
+        <div class="nav-block header__nav-block" id="commercial">
           <button
-            class="navigateBlockBtn"
+            class="nav-block__button"
             aria-haspopup="true"
             aria-expanded="false"
           >
             Commercial
           </button>
         </div>
-        <div class="navigateBlock" id="gallery">
+        <div class="nav-block header__nav-block" id="gallery">
           <button
-            class="navigateBlockBtn"
+            class="nav-block__button"
             aria-haspopup="true"
             aria-expanded="false"
           >
             Gallery
           </button>
         </div>
-        <div class="navigateBlock" id="aboutUs">
+        <div class="nav-block header__nav-block" id="aboutUs">
           <button
-            class="navigateBlockBtn"
+            class="nav-block__button"
             aria-haspopup="true"
             aria-expanded="false"
           >
             About Us
           </button>
         </div>
-        <div class="navigateBlock" id="areasWeServe">
+        <div class="nav-block header__nav-block" id="areasWeServe">
           <button
-            class="navigateBlockBtn"
+            class="nav-block__button"
             aria-haspopup="true"
             aria-expanded="false"
           >
             Areas We Serve
           </button>
         </div>
-        <div class="navigateBlock" id="contactUs">
+        <div class="nav-block header__nav-block" id="contactUs">
           <button
-            class="navigateBlockBtn"
+            class="nav-block__button"
             aria-haspopup="true"
             aria-expanded="false"
           >
             Contact Us
           </button>
         </div>
-        <div class="navigateBlock" id="telephone">
+        <div class="nav-block header__nav-block" id="telephone">
           <span>(800) 809-7197</span>
         </div>
       </nav>
-      <div class="getAFreeEstimate">
-        <button id="gfe" >Get a Free Estimate</button>
+      <div class="header__estimate">
+        <button class="header__estimate-button" id="gfe">
+          Get a Free Estimate
+        </button>
       </div>
     </header>
     <main>
-      <section class="faceImage">
-        <h1>Your Kitchen Refacing Solution</h1>
-        <div class="bringingNewLifeL">
+      <section class="face-image">
+        <div class="face-image__title">
+          <h1>Your Kitchen Refacing Solution</h1>
+        </div>
+        <div class="face-image__subtitle">
           <span>
             Bringing New Life to Your Kitchen Cabinets: American-Made,
             Family-Owned Company
           </span>
         </div>
-        <div class="twoButtons">
-          <div class="getAFreeEstimate">
+        <div class="face-image__buttons">
+          <div class="face-image__button face-image__button--estimate">
             <button>Get Your Free Estimate</button>
           </div>
-          <div class="viewProcess">
+          <div class="face-image__button face-image__button--process">
             <button>View Our Process</button>
           </div>
         </div>
       </section>
-      <section class="threeGoodStuff">
-        <div class="goodStuff">
-          <div class="svgIconLeft">
+      <section class="good-stuff">
+        <div class="good-stuff__item">
+          <div class="good-stuff__icon">
             <img src="src/images/moneyBag.svg" alt="unlock 70% savings" />
           </div>
-          <div class="textRight">
+          <div class="good-stuff__text">
             Unlock 70% savings: reface instead of replace
           </div>
         </div>
-        <div class="goodStuff" id="transform">
-          <div class="svgIconLeft">
+        <div class="good-stuff__item" id="transform">
+          <div class="good-stuff__icon">
             <img src="src/images/clock.svg" alt="transform kitchen 3-5 days" />
           </div>
-          <div class="textRight">Transform your kitchen in 3-5 days</div>
+          <div class="good-stuff__text">Transform your kitchen in 3-5 days</div>
         </div>
-        <div class="goodStuff" id="financing">
-          <div class="svgIconLeft">
+        <div class="good-stuff__item" id="financing">
+          <div class="good-stuff__icon">
             <img src="src/images/giveMoneyBag.svg" alt="financing" />
           </div>
-          <div class="textRight">Kitchen financing options available</div>
+          <div class="good-stuff__text">
+            Kitchen financing options available
+          </div>
         </div>
       </section>
-      <section class="mainOurServices">
-        <h2>Our Services</h2>
-        <div class="tripleBlock">
-          <article class="cabinet" id="cabinetRefacing">
-            <div class="imageFurniture">
+      <section class="services">
+        <h2 class="services__title">Our Services</h2>
+        <div class="services__list">
+          <article class="service service--refacing">
+            <div class="service__image">
               <img
                 src="src/images/cabinetRefacing.png"
                 alt="cabinet Refacing"
               />
             </div>
-            <div class="textAboutFurniture">
-              <div class="subHeading">Refresh Your Existing Kitchen with</div>
-              <h3>Cabinet Refacing</h3>
-              <div class="headingXS">Keep Your Existing Doors</div>
-              <div class="textS">
+            <div class="service__description">
+              <div class="service__subheading">
+                Refresh Your Existing Kitchen with
+              </div>
+              <h3 class="service__name">Cabinet Refacing</h3>
+              <div class="service__small-heading">Keep Your Existing Doors</div>
+              <div class="service__text">
                 Our cabinet refacing service transforms the appearance of your
                 kitchen while preserving its original layout and the structure
                 of your existing cabinets and drawer fronts.
               </div>
-              <div class="learnMore">
+              <div class="service__learn-more">
                 <button>Learn More</button>
               </div>
             </div>
           </article>
-          <article class="cabinet" id="CabinetDoorReplacement">
-            <div class="imageFurniture">
+          <article class="service service--replacement">
+            <div class="service__image">
               <img
                 src="src/images/CabinetDoorReplacement.png"
                 alt="cabinet door replacement"
               />
             </div>
-            <div class="textAboutFurniture">
-              <div class="subHeading">Replace Your Cabinet Doors with</div>
-              <h3>Cabinet Door Replacement</h3>
-              <div class="headingXS">Custom-made Doors & Drawer Fronts</div>
-              <div class="textS">
+            <div class="service__description">
+              <div class="service__subheading">
+                Replace Your Cabinet Doors with
+              </div>
+              <h3 class="service__name">Cabinet Door Replacement</h3>
+              <div class="service__small-heading">
+                Custom-made Doors & Drawer Fronts
+              </div>
+              <div class="service__text">
                 If your cabinet doors and drawer fronts require a refresh, our
                 team can manufacture new cabinet doors in-house. We ensure the
                 new elements seamlessly blend with your existing kitchen,
                 providing an affordable and efficient upgrade.
               </div>
-              <div class="learnMore">
+              <div class="service__learn-more">
                 <button>Learn More</button>
               </div>
             </div>
           </article>
-          <article class="cabinet" id="Thermofoil Cabinet Door Repair">
-            <div class="imageFurniture">
+          <article class="service service--repair">
+            <div class="service__image">
               <img
                 src="src/images/CabinetDoorReplacement.png"
                 alt="Thermofoil Cabinet Door Repair"
               />
             </div>
-            <div class="textAboutFurniture">
-              <div class="subHeading">
+            <div class="service__description">
+              <div class="service__subheading">
                 Renew Your Peeling Cabinet Doors with
               </div>
-              <h3>Thermofoil Cabinet Door Repair</h3>
-              <div class="headingXS">Nationwide Shipping</div>
-              <div class="textS">
+              <h3 class="service__name">Thermofoil Cabinet Door Repair</h3>
+              <div class="service__small-heading">Nationwide Shipping</div>
+              <div class="service__text">
                 We are one of very few cabinet refacing companies who can do
                 this service at our workshop here in West Chicago, without
                 disrupting your daily routine. Just ship your peeling or
@@ -188,109 +205,120 @@
                 time than ordering new ones. We offer 48h repairs for Illinois
                 residents.
               </div>
-              <div class="learnMore">
+              <div class="service__learn-more">
                 <button>Learn More</button>
               </div>
             </div>
           </article>
         </div>
       </section>
+
       <section class="gallery">
-        <div class="titileTextButton">
-          <h2>Gallery</h2>
-          <div class="galleryMore">
-            <div class="bodyTextM">
+        <div class="gallery__header">
+          <h2 class="gallery__header-title">Gallery</h2>
+          <div class="gallery__header-more">
+            <div class="gallery__more-text">
               Browse our gallery to see before and after photos of our previous
               cabinet refacing projects. Our transformative work speaks for
               itself.
             </div>
-            <div class="browserTheGallery">
+            <div class="gallery__more-button">
               <button>Browse The Gallery</button>
             </div>
           </div>
         </div>
-        <div class="slider">
-          <div class="slides">
-            <div class="slide">
-        
-              <img src="src/images/slide1_1.png" alt="slide1_image1" />
-              <img src="src/images/slide1_2.png" alt="slide1_image2" />
-            </div>
-            <div class="slide">
-           
-              <img src="src/images/slide2_1.png" alt="slide2_image1" />
-              <img src="src/images/slide2_2.png" alt="slide2_image2" />
-            </div>
-            <!-- Добавьте больше слайдов по необходимости -->
+    
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="gallery__slide">
+                  <img src="src/images/slide1_1.png" alt="slide1_image1" />
+                  <img src="src/images/slide1_2.png" alt="slide1_image2" />
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="gallery__slide">
+                  <img src="src/images/slide2_1.png" alt="slide2_image1" />
+                  <img src="src/images/slide2_2.png" alt="slide2_image2" />
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="controls">
-            <div class="prev" onclick="prevSlide()">❮</div>
-            <div class="next" onclick="nextSlide()">❯</div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              Prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              Next
+            </button>
           </div>
         </div>
       </section>
       <section class="testimonials">
-        <div class="headingAndSubText">
-          <h2>Testimonials</h2>
-          <div class="bodyTextM">
+        <div class="testimonials__header">
+          <h2 class="testimonials__title">Testimonials</h2>
+          <div class="testimonials__text">
             Read what our satisfied clients say about their experience with
             Kitchen Cabinet Guys and the quality of our work.
           </div>
         </div>
-        <div class="comms">
-          <div class="comment">
-            <div class="stars">
+        <div class="testimonials__comments">
+          <div class="testimonial">
+            <div class="testimonial__stars">
               <img src="src/images/stars.svg" alt="all stars" />
             </div>
-            <div class="commentaryText">
+            <div class="testimonial__text">
               THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I found
               them on the Web (Google Search) and filled out a "Contact" form on
               a Sat. I couldn't believe that Andrei called me on Sunday morn. -
               I told my wife "I already like these guys!".
             </div>
-            <div class="commentAuthor">Christopher Torre</div>
+            <div class="testimonial__author">Christopher Torre</div>
           </div>
-          <div class="comment">
-            <div class="stars">
+          <div class="testimonial">
+            <div class="testimonial__stars">
               <img src="src/images/stars.svg" alt="all stars" />
             </div>
-            <div class="commentaryText">
+            <div class="testimonial__text">
               Andre and the team @ Kitchen Cabinet Guys LLC did a stunning
               transformation of my family’s kitchen. Our realtor said we easily
               increased the value of our home by $30k for less than a third of
               the cost. If anyone is considering a new kitchen,
             </div>
-            <div class="commentAuthor">Michael Jason</div>
+            <div class="testimonial__author">Michael Jason</div>
           </div>
-          <div class="comment">
-            <div class="stars">
+          <div class="testimonial">
+            <div class="testimonial__stars">
               <img src="src/images/stars.svg" alt="all stars" />
             </div>
-            <div class="commentaryText">
+            <div class="testimonial__text">
               THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I found
               them on the Web (Google Search) and filled out a "Contact" form on
               a Sat. I couldn't believe that Andrei called me on Sunday morn. -
               I told my wife "I already like these guys!".
             </div>
-            <div class="commentAuthor">Christopher Torre</div>
+            <div class="testimonial__author">Christopher Torre</div>
           </div>
         </div>
-        <div class="inputForma">
-          <div class="kitchenAndForma">
-            <div class="kitchen">
+        <div class="testimonial-form">
+          <div class="testimonial-form__wrapper">
+            <div class="testimonial-form__image">
               <img
                 src="src/images/kitchenInputForm.png"
                 alt="Take the First Step Towards Your Kitchen Makeover"
               />
             </div>
-            <form>
-              <h2>Take the First Step Towards Your Kitchen Makeover</h2>
-              <div class="bodyTextM">
+            <form class="testimonial-form__form">
+              <h2 class="testimonial-form__title">
+                Take the First Step Towards Your Kitchen Makeover
+              </h2>
+              <div class="testimonial-form__text">
                 Ready to transform your kitchen? Contact us today to get started
                 with your free estimate!
               </div>
-              <div class="inputs">
-                <div class="names">
+              <div class="testimonial-form__inputs">
+                <div class="testimonial-form__names">
                   <input
                     type="text"
                     name="firstName"
@@ -298,13 +326,13 @@
                   />
                   <input type="text" name="lastName" placeholder="Last Name" />
                 </div>
-                <div class="emailAndPhone">
+                <div class="testimonial-form__contact">
                   <input type="email" name="email" placeholder="Email" />
                   <input type="phone" name="phone" placeholder="Phone" />
                 </div>
-                <div class="addressServicesMessage">
+                <div class="testimonial-form__details">
                   <input type="text" name="adress" placeholder="Address" />
-                  <div class="dropdown">
+                  <div class="dropdown testimonial-form__dropdown">
                     <select name="services" id="services-select">
                       <option value="">Services</option>
                       <option value="CabinetRefacing">Cabinet Refacing</option>
@@ -327,7 +355,7 @@
                   />
                 </div>
               </div>
-              <button type="submit" class="defaultButton">
+              <button type="submit" class="testimonial-form__button">
                 Get A Free Estimate
               </button>
             </form>
@@ -335,9 +363,9 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="info">
-        <div class="infoBlock">
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__info-block">
           Physical Address:
           <a href="#"
             ><span
@@ -346,11 +374,11 @@
             ></a
           >
         </div>
-        <div class="infoBlock">
+        <div class="footer__info-block">
           Phone:
           <a href="#"><span>(800) 809-7197</span></a>
         </div>
-        <div class="infoBlock">
+        <div class="footer__info-block">
           Hours of Operation:
 
           <span
@@ -360,10 +388,10 @@
           >
         </div>
       </div>
-      <div class="followUs">
-        <div class="followBlock">
+      <div class="footer__follow">
+        <div class="footer__follow-block">
           Follow Us:
-          <div class="doubleFollow">
+          <div class="footer__socials">
             <img
               src="src/images/followUsToEclipse.svg"
               alt="follow us to ellipse"
@@ -374,14 +402,14 @@
             />
           </div>
         </div>
-        <div class="followBlock">
+        <div class="footer__follow-block">
           Brought to you by
-          <div class="imageBrought">
+          <div class="footer__sponsor">
             <img src="src/images/Thermoflip Logo.png" alt="Thermoflip Logo" />
           </div>
         </div>
-        <div class="followBlock">
-          <div class="tripleRating">
+        <div class="footer__follow-block">
+          <div class="footer__ratings">
             <img src="src/images/homeAd.png" alt="good by home ad" />
             <img src="src/images/3smth.png" alt="3 mean good" />
             <img src="src/images/aRating.png" alt="a+ rating" />
@@ -389,18 +417,22 @@
           Copyright © 2023 Kitchen Cabinet Guys - All Rights Reserved
         </div>
       </div>
-      <div class="blogFaq">
-        <div class="blog">Blog</div>
-        <div class="faq">FAQ</div>
+      <div class="footer__links">
+        <div class="footer__link">Blog</div>
+        <div class="footer__link">FAQ</div>
       </div>
-      <div class="privacePolicy">
-        <div class="privacyBlock">Privacy Policy</div>
-        <div class="termsCondition">Terms & Conditions</div>
-        <div class="createBy">
+      <div class="footer__policies">
+        <div class="footer__policy">Privacy Policy</div>
+        <div class="footer__policy">Terms & Conditions</div>
+        <div class="footer__credits">
           Created By <a href="#">Comrade Digital Marketing Agency</a>
         </div>
       </div>
     </footer>
+
     <script src="dist/js/main.js"></script>
+    <script>
+      new Glide(".glide").mount();
+    </script>
   </body>
 </html>

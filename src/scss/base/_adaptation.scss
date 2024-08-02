@@ -1,0 +1,334 @@
+.header {
+    border-radius: 0 0 48px 48px;
+    height: 102px;
+    width: 100%;
+    background: $headerBgColor;
+    @include flexCenter();
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 0 20px; // Исправлено: значения разделены пробелом
+}
+.header__logo {
+    >img {
+        width: 240px;
+        height: 60px;
+    }
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.header__dropdown {
+}
+.dropdown__button {
+    padding: 16px;
+    line-height: 150%;
+    border: none;
+    font-size: 18px;
+    background-color: white;
+}
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    a:hover {background-color: #ddd;}
+}
+.show {display:block;}
+.nav-block {
+}
+.header__nav-block {
+}
+.nav-block__button {
+    padding: 16px;
+    line-height: 150%;
+    border: none;
+    font-size: 18px;
+    background-color: white;
+}
+.header__estimate {
+    button {
+        @include defaultButton();
+
+        &:hover {
+            @include hoverButton();
+           
+        }
+    }
+}
+.header__estimate-button {
+    
+}
+.face-image {   
+    margin-top: -50px;
+    border-radius: 0 0 72px 72px;
+    padding: 0 20px;
+    width: 100%;
+    background-size: cover;
+    height: 689px;
+    background-image: url("../images/fce.png");
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), rgba(0, 0, 0, 0.4), url("path_to_image");
+    @include flexCenter();
+}
+.face-image__title {
+}
+.face-image__subtitle {
+    @include bodyTextL();
+    color: #ffffff;
+    @include centeredText(center, 540px);    
+}
+.face-image__buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;  
+}
+.face-image__button {
+
+}
+.face-image__button--estimate {
+    button {
+        @include buttonStyles(237px, 72px, $buttonDefaultColor, #fff);
+
+        &:hover {
+            @include hoverButton();
+            width: 237px;
+        }
+    }
+}
+.face-image__button--process {
+    button {
+        @include buttonStyles(237px, 72px, #45290a00, #fff);
+
+        &:hover {
+            @include hoverButton();
+            width: 237px;
+        }
+    }
+}
+.good-stuff {
+    margin-top: 5vh;
+    @include sectionStyles(100%, row, 200px);
+    justify-content: space-evenly;
+}
+.good-stuff__item {
+    width: 272px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.good-stuff__icon {
+}
+.good-stuff__text {
+    @include bodyTextM();
+    width: 250px;
+}
+.services {
+    margin-top: 45px;
+    padding-top: 95px;
+    border-radius: 72px;
+    background-color: #F6F3EC;
+    @include flexCenter();
+    padding-bottom: 105px;
+}
+.services__title {
+}
+.services__list {   
+    padding: 0 72px;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.service {
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 24px 24px;
+    gap: 72px;
+    display: flex;
+    justify-content: center;
+}
+.service--refacing {    
+}
+.service__image {
+}
+.service__description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.service__subheading {
+    @include subHeading();
+    color: #5E5E5E;
+}
+.service__name {
+}
+.service__small-heading {
+    @include bodyTextXS();
+    color: #5E5E5E;
+}
+.service__text {
+    @include bodyTextS();
+    color: #5E5E5E;
+    width: 479px;
+}
+.service__learn-more {
+    button{
+        @include learnMoreButton();
+        background-color: #5e5e5e00;
+    }
+   
+}
+.service--replacement {
+    flex-direction: row-reverse;
+    gap: 107px;
+    padding-left: 71px;
+}
+.service--repair {
+    .service__name {
+        width: 474px;
+    }
+    .service__text {
+        width: 502px;
+    }
+    
+}
+.gallery {
+    margin-top: 10%;
+    border-radius: 100px;
+    height: 100%; // Убедитесь, что высота контейнера адаптируется к родительскому элементу
+    background: url('/src/images/galleryBackground.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 2%;
+}
+.gallery__header {
+    padding-top: 100px;
+    display: flex;
+    align-items: start;
+    gap: 308px;
+}
+.gallery__header-title {
+    @include heading2();
+    margin: 0;
+}
+.gallery__header-more {
+    width: 744px;
+}
+.gallery__more-text {
+    @include bodyTextM();
+    color: #fff;
+}
+.gallery__more-button {
+    button{
+        @include buttonStyles(209px, 72px,#00000000,#fff);
+    }
+}
+.glide {
+}
+.glide__track {
+}
+.glide__slides {
+}
+.glide__slide {
+}
+.gallery__slide {
+}
+.glide__arrows {
+}
+.glide__arrow {
+}
+.glide__arrow--left {
+}
+.glide__arrow--right {
+}
+.testimonials {
+}
+.testimonials__header {
+}
+.testimonials__title {
+}
+.testimonials__text {
+}
+.testimonials__comments {
+}
+.testimonial {
+}
+.testimonial__stars {
+}
+.testimonial__text {
+}
+.testimonial__author {
+}
+.testimonial-form {
+}
+.testimonial-form__wrapper {
+}
+.testimonial-form__image {
+}
+.testimonial-form__form {
+}
+.testimonial-form__title {
+}
+.testimonial-form__text {
+}
+.testimonial-form__inputs {
+}
+.testimonial-form__names {
+}
+.testimonial-form__contact {
+}
+.testimonial-form__details {
+}
+.testimonial-form__dropdown {
+}
+.testimonial-form__button {
+}
+.footer {
+}
+.footer__info {
+}
+.footer__info-block {
+}
+.footer__follow {
+}
+.footer__follow-block {
+}
+.footer__socials {
+}
+.footer__sponsor {
+}
+.footer__ratings {
+}
+.footer__links {
+}
+.footer__link {
+}
+.footer__policies {
+}
+.footer__policy {
+}
+.footer__credits {
+}

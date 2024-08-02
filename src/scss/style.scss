@@ -9,10 +9,26 @@
 @import 'components/mainContent.scss';
 @import 'components/slider.scss';
 @import 'components/footer.scss';
+
 * {
     box-sizing: border-box;
 }
 
+body {
+    background: $bgColor;
+    margin: auto;
+    padding: 0;
+    color: $textColor;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    
+    width: 1440px;
+    background: #fff;
+
+    button {
+        cursor: pointer;
+    }
+}
 
 @media (max-width: 767px) {
     header {
@@ -24,6 +40,7 @@
 
         .getAFreeEstimate {
             gap: 0;
+
             button {
                 width: 41px;
                 height: 41px;
@@ -73,11 +90,13 @@
         align-items: center;
         gap: 20px;
     }
-    .faceImage{
-        h1{
+
+    .faceImage {
+        h1 {
             text-align: center;
         }
     }
+
     .bringingNewLifeL {
         width: 100%;
     }
@@ -230,7 +249,7 @@
         display: none;
     }
 
-    .inputs{
+    .inputs {
         margin-left: -60px;
     }
 
