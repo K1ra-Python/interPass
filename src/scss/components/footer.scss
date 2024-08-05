@@ -3,68 +3,74 @@
 @import '../base/fonts';
 @import '../base/adaptation';
 // Основной стиль для футера
-footer {
+.footer {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
 
-}
-
-// Общий миксин для блоков с текстом
-
-
-// Блок информации
-.info {
-    @include footerTextBlock();
-
-    a {
-        color: $buttonDefaultColor;
+    margin-top: -5%;
+    z-index: 0;
+    position: relative;
+    max-width: 100%;
+    background-color: #342F28;
+    padding-bottom: 60px;
+    padding-top: 149px;
+    
+    @include buttonText();
+    color: #FFFBF4;
+    a{
+        color: #F37021;
     }
-
-    span {
-        @include bodyTextM();
-    }
 }
 
-// Блок для социальных сетей
-.followUs {
-    @include footerTextBlock();
-}
-
-// Блок для блога и FAQ
-.blogFaq {
-    @include footerTextBlock();
-}
-
-// Блок для политики конфиденциальности
-.privacePolicy {
-    @include footerTextBlock();
-}
-
-// Общие стили для блоков с элементами
-@mixin footerBlock {
-    gap: 8px;
+.footer__info {
+    max-width: 348px;
     display: flex;
     flex-direction: column;
-}
-
-// Применение стилей для блоков внутри футера
-.infoBlock {
-    @include footerBlock();
-}
-
-.followBlock {
-  
-    @include footerBlock();
-}
-
-.tripleRating{
-    display: flex;
     gap: 24px;
+    padding-left: 72px;
+    padding-right: 72px;
 }
-// Создано на
-.createBy {
-    margin-left: -100px;
-    margin-top: 200px;
 
-    a {
-        color: $buttonDefaultColor;
-    }
+.footer__info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 298px;
+}
+
+.footer__follow {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 72px;
+}
+
+.footer__follow-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__socials {}
+
+.footer__sponsor {}
+
+.footer__ratings {}
+
+.footer__links {}
+
+.footer__link {}
+
+.footer__policies {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 8px;
+}
+
+.footer__policy {}
+
+.footer__credits {
+    padding-top: 223px;
 }
