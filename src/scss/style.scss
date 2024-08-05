@@ -113,6 +113,7 @@ body {
         flex-direction: column;
 
         button {
+          
             width: 344px;
         }
     }
@@ -244,20 +245,143 @@ body {
 
     .testimonials {
         width: 100%;
+        padding: 0;
     }
 
     .testimonials__header {
         gap: 0px;
         flex-direction: column;
         width: 100%;
-        width: 343px;
+        margin-bottom: 56px;
+    }
+
+    .testimonials__text {
+        margin: auto;
+        padding-left: 3%;
+    }
+
+    .testimonial__comments-comment {
+        padding: 0;
+        padding-right: 16px;
+        gap: 24px;
+    }
+
+    .testimonial__stars {
+        img {
+            width: 126px;
+            height: 22px;
+        }
+
+        width: 100%;
     }
 
     .testimonials__text {
         width: 343px;
     }
 
+    .glide2{
+        color: #5E5E5E;
+        .glide__arrows{
+            padding-left: 16px;
+            .glide__arrow{
+                border: 1px solid #5E5E5E;
+                color: #5E5E5E;
+            }
+        }
+    }
 
+    .testimonial-form__wrapper {
+        width: 100%;
+    }
+
+    .testimonial-form__image {
+        display: none;
+    }
+
+    .testimonial-form {
+        padding: 50px 16px;
+        background-size: cover;
+        background-position: center;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+
+    .testimonial-form__form {
+        width: 100%;
+    }
+
+    .testimonial-form__title {
+        width: 323px;
+    }
+
+    .testimonial-form__inputs {
+        width: 100%;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .testimonial-form__names {
+        flex-direction: column;
+
+    }
+
+    .testimonial-form__contact {
+        flex-direction: column;
+    }
+
+    .testimonial-form__button {
+        width: 100%;
+    }
+
+    .footer {
+        margin-top: -15%;
+        flex-direction: column;
+        padding: 82px 16px;
+        gap: 32px;
+    }
+
+    .footer__info {
+        padding: 0;
+    }
+
+    .footer__follow {
+        padding: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer__links {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .footer__policies {
+        flex-direction: row;
+    }
+
+    .footer__policy {
+
+        order: 2;
+    }
+
+    .footer__follow-block-copyright {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .footer__ratings {
+        display: flex;
+        gap: 16px;
+    }
+
+    .footer__credits {
+        order: 1;
+        padding: 0;
+    }
 }
 
 

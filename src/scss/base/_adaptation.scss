@@ -119,10 +119,13 @@
     gap: 20px;
 }
 
-.face-image__button {}
+.face-image__button {
+  
+}
 
 .face-image__button--estimate {
     button {
+        border: none;
         @include buttonStyles(237px, 72px, $buttonDefaultColor, #fff);
 
         &:hover {
@@ -134,8 +137,9 @@
 
 .face-image__button--process {
     button {
+     
         @include buttonStyles(237px, 72px, #45290a00, #fff);
-
+        border: 1px solid  #fff;
         &:hover {
             @include hoverButton();
             width: 237px;
@@ -146,6 +150,7 @@
 .good-stuff {
     @include sectionStyles(100%, row, 200px);
     justify-content: space-evenly;
+    margin-top: 39px;
 }
 
 .good-stuff__item {
