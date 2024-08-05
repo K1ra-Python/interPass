@@ -11,9 +11,9 @@ function myFunction(x) {
   }
   
   function addExtraButton() {
-    if (!document.getElementById("extraButton")) {
+    if (!document.getElementById("header__estimate--button--extra")) {
       const newButton = document.createElement("button");
-      newButton.id = "extraButton";
+      newButton.id = "header__estimate--button--extra";
       const button = document.getElementById("gfe");
       button.parentNode.insertBefore(newButton, button);
   
@@ -30,25 +30,27 @@ function myFunction(x) {
         } else {
           nav.style.display = "none";
           telephone.style.display = "flex";
-          borderRadius.style.borderRadius = "18px"; // Используем глобальную переменную
+          borderRadius.style.borderBottomLeftRadius = "18px"; // Используем глобальную переменную
+          borderRadius.style.borderBottomRightRadius = "18px"; // Используем глобальную переменную
         }
       };
     }
   }
   
   function removeExtraButton() {
-    var extraButton = document.getElementById("extraButton");
+    var extraButton = document.getElementById("header__estimate--button--extra");
     if (extraButton) {
       extraButton.remove();
     }
     // Скрыть меню
     const nav = document.getElementById("myNav");
-    borderRadius.style.borderRadius = "18px"; // Используем глобальную переменную
-    nav.style.display = "block";
+    borderRadius.style.borderBottomLeftRadius = "18px"; // Используем глобальную переменную
+    borderRadius.style.borderBottomRightRadius = "18px"; // Используем глобальную переменную
+    nav.style.display = "flex";
   }
   
   // Create a MediaQueryList object
-  var x = window.matchMedia("(max-width: 735px)");
+  var x = window.matchMedia("(max-width: 765px)");
   
   // Глобальная переменная для элемента borderRadius
   let borderRadius = document.getElementById("myHeader");

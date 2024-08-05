@@ -12,6 +12,7 @@
 
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     color: $textColor;
     font-size: 16px;
     font-family: "Manrope", sans-serif;
-    
+
     width: 1440px;
     background: #fff;
 
@@ -30,239 +31,238 @@ body {
     }
 }
 
-@media (max-width: 767px) {
-    header {
-        border-radius: 0 0 18px 18px;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 5%;
-        height: 60px;
+@media (max-width: 765px) {
+    body {
+        width: 375px;
+    }
 
-        .getAFreeEstimate {
-            gap: 0;
+    .header {
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        height: 57px;
+        display: flex;
+        position: relative;
 
-            button {
-                width: 41px;
-                height: 41px;
-            }
+    }
+
+    .header__logo {
+        padding-left: 16px;
+
+        >img {
+            width: 156px;
         }
+    }
 
-        #gfe {
+    .header__nav {
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        height: 610px;
+        width: 375px;
+        background-color: #fff;
+    }
+
+    .header__nav-block {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .header__dropdown {
+        position: static;
+        width: 100%;
+        background-color: #fff
+    }
+
+    .header__estimate {
+        padding-left: 52px;
+        display: flex;
+
+        .header__estimate-button {
+            width: 41px;
+            height: 41px;
+            background-color: #ffffff00;
             background-image: url("/src/images/openMenu.svg");
             background-repeat: no-repeat;
             background-position: center;
-            background-color: rgba(0, 0, 0, 0);
-            color: rgba(0, 0, 0, 0);
-        }
-
-        #extraButton {
-            background-image: url("/src/images/bp.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-
-            background-color: rgba(0, 0, 0, 0);
+            color: #ffffff00;
         }
     }
 
-    .logo {
-
-        img {
-            width: 156px;
-            height: 26px;
-        }
+    #header__estimate--button--extra {
+        width: 41px;
+        height: 41px;
+        background-color: #ffffff00;
+        background-image: url("/src/images/bp.svg");
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
-    nav {
-        display: none;
-        position: absolute;
-        margin-left: -5%;
-        top: 100%;
-        width: 100%;
-        flex-direction: column;
-        background-color: #ffffff;
+    .face-image__title {
+        text-align: center;
     }
 
+    .face-image__subtitle {
+        text-align: center;
+        width: 336px;
+    }
 
-
-    .getAFreeEstimate {
+    .face-image__buttons {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .faceImage {
-        h1 {
-            text-align: center;
-        }
-    }
-
-    .bringingNewLifeL {
-        width: 100%;
-    }
-
-    .twoButtons {
         flex-direction: column;
 
         button {
-            width: 100%;
+            width: 344px;
         }
     }
 
-    .threeGoodStuff {
-        margin-top: 1vh;
+    .good-stuff {
+        margin-top: 32px;
         flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .good-stuff__item {
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .service {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 343px;
+        align-items: center;
+        padding: 16px;
         gap: 24px;
     }
 
-    .tripleBlock .cabinet {
+    .service__image {
+
+        img {
+            width: 310px;
+        }
+    }
+
+    .service__subheading {
+        width: 100%;
+    }
+
+    .service__description {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
-    #CabinetDoorReplacement {
-        flex-direction: column;
+    .service__text {
+        width: 100%;
     }
 
-    .imageFurniture img {
-        width: 300px;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .textAboutFurniture {
-        align-items: center;
-
-        .textS {
+    .service--repair {
+        .service__description {
             width: 100%;
+
+            .service__name {
+                width: 100%;
+            }
+
+            .service__text {
+                width: 100%;
+            }
         }
     }
 
     .gallery {
-        width: 100%;
-        justify-content: start;
         border-radius: 50px;
     }
 
-    .titileTextButton {
+    .gallery__header {
+        width: 100%;
         flex-direction: column;
-        justify-content: center;
-        margin: 5%;
-
-        h2 {
-            margin-top: 0;
-            margin-left: 10px;
-        }
+        gap: 10px;
+        padding: 50px 16px;
     }
 
-    .galleryMore {
-        margin-left: 5%;
-    }
-
-    .slider {
+    .gallery__header-more {
         width: 100%;
     }
 
-    .slide {
-        flex-direction: column;
+    .glide__slides {
+        padding: 0px;
     }
 
-    .controls {
-        justify-content: start;
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
     }
 
-    .headingAndSubText {
+    li {
+
+        width: 100% !important;
         flex-direction: column;
+        flex-shrink: 1 !important;
         justify-content: center;
         align-items: center;
-        align-content: center;
 
-        .bodyTextM {
-            align-self: center;
+        //margin-right: -16px;
+        //flex-direction: row-reverse;
+        /*#slide1_pic1{
+        display: flex;
+        order: 2;
+    }*/
+        .glide__slide--active {
+
+            display: flex;
+        }
+
+        .glide__slide {
+
+            display: flex !important;
+            width: 43px !important;
+        }
+
+        img {
             width: 343px;
         }
     }
 
-    .sliderComms,
-    .slider-comms-list {
-        width: 100%;
-        height: 100%;
+    .glide__arrows {
+        justify-content: flex-start;
+        padding-bottom: 50px;
     }
 
-    .comms {
-        margin-left: 5%;
-        gap: 50px;
-        //width: 27%;
+    .testimonials_comments {
+        flex-direction: row;
+        width: 300px;
+        overflow: hidden;
+    }
+
+    .testimonials {
+        width: 100%;
+    }
+
+    .testimonials__header {
+        gap: 0px;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .comment {
         width: 100%;
-    }
-
-    .commentaryText {
         width: 343px;
     }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        h2 {
-            width: 50%;
-        }
-
-        .defaultButton {
-            width: 343px;
-            margin-left: -50px
-        }
-    }
-
-    .names,
-    .emailAndPhone,
-    .addressServicesMessage {
-        padding: 2%;
-
-        input {
-            margin-left: 7%;
-            width: 343px;
-        }
-    }
-
-    .addressServicesMessage {
-        .dropdown {
-            select {
-                width: 343px;
-                margin-left: 8%;
-            }
-        }
+    .testimonials__text {
+        width: 343px;
     }
 
 
-
-    .kitchen {
-        display: none;
-    }
-
-    .inputs {
-        margin-left: -60px;
-    }
-
-    footer {
-        margin-top: 0;
-        height: 100%;
-        flex-direction: column;
-    }
-
-    .createBy {
-        margin-left: 0;
-    }
 }
+
+
+
+
 
 
 // Основной контейнер для контента

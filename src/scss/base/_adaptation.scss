@@ -144,7 +144,6 @@
 }
 
 .good-stuff {
-    margin-top: 5vh;
     @include sectionStyles(100%, row, 200px);
     justify-content: space-evenly;
 }
@@ -297,7 +296,7 @@
 
 .glide__slides {
     gap: 20px;
-padding: 0 72px;
+//padding: 0 72px;
 }
 
 
