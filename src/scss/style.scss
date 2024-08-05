@@ -23,7 +23,7 @@ body {
     font-size: 16px;
     font-family: "Manrope", sans-serif;
 
-    width: 1440px;
+    max-width: 1440px;
     background: #fff;
 
     button {
@@ -33,7 +33,7 @@ body {
 
 @media (max-width: 765px) {
     body {
-        width: 375px;
+        max-width: 375px;
         overflow-x: hidden;
     }
 

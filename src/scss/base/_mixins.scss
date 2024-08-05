@@ -135,7 +135,7 @@
     border: none;
     border-radius: 72px;
     padding: 24px 32px;
-    width: 212px;
+    max-width: 212px;
     height: 72px;
     background: $buttonDefaultColor;
     color: #fff;
@@ -146,7 +146,7 @@
     border: 1px solid #45280a;
     border-radius: 72px;
     padding: 24px 32px;
-    width: 150px;
+    max-width: 150px;
     height: 72px;
     background-color: none;
 }
@@ -156,7 +156,7 @@
     border: none;
     border-radius: 72px;
     padding: 24px 32px;
-    width: 212px;
+    max-width: 212px;
     height: 72px;
     background: $buttonHoverColor;
     color: $textColor;
@@ -166,7 +166,7 @@
     padding: 0 5px;
     border: 1px solid #d9d9d9;
     border-radius: 16px;
-    width: 238px;
+    max-width: 238px;
     height: 48px;
     background: #fff;
 }
@@ -174,7 +174,7 @@
 @mixin buttonStyles($width, $height, $background, $color) {
     border-radius: 72px;
     padding: 24px 32px;
-    width: $width;
+    max-width: $width;
     height: $height;
     background-color: $background;
     color: $color;
@@ -184,7 +184,7 @@
     display: flex;
     flex-direction: $flexDirection;
     gap: $gap;
-    width: $width;
+    max-width: $width;
 }
 
 @mixin centeredText($textAlign, $width) {
@@ -192,7 +192,7 @@
     width: $width;
 }
 @mixin sliderButton($position) {
-    width: 72px;
+    max-width: 72px;
     height: 72px;
     background-color: rgba(0, 0, 0, 0);
     color: white;

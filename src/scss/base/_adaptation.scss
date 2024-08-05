@@ -1,7 +1,7 @@
 .header {
     border-radius: 0 0 48px 48px;
     height: 102px;
-    width: 100%;
+    max-width: 100%;
     background: $headerBgColor;
     @include flexCenter();
     flex-direction: row;
@@ -15,7 +15,7 @@
 
 .header__logo {
     >img {
-        width: 240px;
+        max-width: 240px;
         height: 60px;
     }
 }
@@ -44,7 +44,7 @@
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    max-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 
@@ -95,7 +95,7 @@
     margin-top: -50px;
     border-radius: 0 0 72px 72px;
     padding: 0 20px;
-    width: 100%;
+    max-width: 100%;
     background-size: cover;
     height: 689px;
     background-image: url("/src/images/fce.webp");
@@ -130,7 +130,7 @@
 
         &:hover {
             @include hoverButton();
-            width: 237px;
+            max-width: 237px;
         }
     }
 }
@@ -142,7 +142,7 @@
         border: 1px solid  #fff;
         &:hover {
             @include hoverButton();
-            width: 237px;
+            max-width: 237px;
         }
     }
 }
@@ -154,7 +154,7 @@
 }
 
 .good-stuff__item {
-    width: 272px;
+    max-width: 272px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -164,7 +164,7 @@
 
 .good-stuff__text {
     @include bodyTextM();
-    width: 250px;
+    max-width: 250px;
 }
 
 .services {
@@ -220,7 +220,7 @@
 .service__text {
     @include bodyTextS();
     color: #5E5E5E;
-    width: 479px;
+    max-width: 479px;
 }
 
 .service__learn-more {
@@ -239,11 +239,11 @@
 
 .service--repair {
     .service__name {
-        width: 474px;
+        max-width: 474px;
     }
 
     .service__text {
-        width: 502px;
+        max-width: 502px;
     }
 
 }
@@ -276,7 +276,7 @@
 }
 
 .gallery__header-more {
-    width: 744px;
+    max-width: 744px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -349,7 +349,7 @@ line-height: 150%;
 .testimonials__title {}
 
 .testimonials__text {
-    width: 748px;
+    max-width: 748px;
     @include bodyTextM();
     color: #5E5E5E;
 }
@@ -375,7 +375,7 @@ line-height: 150%;
 .testimonial__stars {}
 
 .testimonial__text {
-    width: 331px;
+    max-width: 331px;
 }
 
 .testimonial__author {}
@@ -393,14 +393,16 @@ line-height: 150%;
     gap: 48px;
 }
 
-.testimonial-form__image {}
+.testimonial-form__image {
+ 
+}
 
 .testimonial-form__form {
-    width: 494px;
+    max-width: 494px;
 }
 
 .testimonial-form__title {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -423,7 +425,7 @@ line-height: 150%;
 
 .testimonial-form__names {
     input{
-        width: 100%;
+        max-width: 100%;
     }
     display: flex;
     gap: 8px;
@@ -431,7 +433,7 @@ line-height: 150%;
 
 .testimonial-form__contact {
     input{
-        width: 100%;
+        max-width: 100%;
     }
     display: flex;
     gap: 8px;
@@ -442,7 +444,7 @@ line-height: 150%;
     display: flex;
     flex-direction: column;
     input{
-        width: 100%;
+        max-width: 100%;
     }
     #message{
         height: 122px;
@@ -454,7 +456,7 @@ line-height: 150%;
     @include bodyTextS();
     @include inputButton();
     color: #5E5E5E;
-    width: 100%;
+    max-width: 100%;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 6px;
@@ -465,7 +467,7 @@ line-height: 150%;
 .testimonial-form__button {
     margin-top: 16px;
     @include defaultButton();
-    width: 484px;
+    max-width: 484px;
 }
 
 ::placeholder{
@@ -480,7 +482,7 @@ line-height: 150%;
     margin-top: -5%;
     z-index: 0;
     position: relative;
-    width: 100%;
+    max-width: 100%;
     background-color: #342F28;
     padding-bottom: 60px;
     padding-top: 149px;
@@ -493,7 +495,7 @@ line-height: 150%;
 }
 
 .footer__info {
-    width: 348px;
+    max-width: 348px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -505,7 +507,7 @@ line-height: 150%;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 298px;
+    max-width: 298px;
 }
 
 .footer__follow {
